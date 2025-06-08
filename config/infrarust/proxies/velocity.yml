@@ -1,0 +1,6 @@
+domains:
+  - "mc.friet.men"
+addresses:
+  - "minecraft-server_velocity:25566"
+
+sendProxyProtocol: true

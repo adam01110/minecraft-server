@@ -1,0 +1,63 @@
+name: minecraft-server
+services:
+  infrarust:
+    image: infrarust/infrarust
+    container_name: infrarust
+    hostname: infrarust
+    restart: unless-stopped
+    stop_grace_period: 1m
+    # memory limit
+    deploy:
+      resources:
+        limits:
+          memory: 100mb
+    ports:
+      # port for java
+      - 25565:25565
+    networks:
+      - infrarust-velocity
+    volumes:
+      # config
+      - ../config/infrarust:/etc/infrarust/config.yaml
+      # timezone
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+  velocity:
+    image: infrarust/infrarust
+    container_name: velocity
+    hostname: velocity
+    restart: unless-stopped
+    stop_grace_period: 1m
+    # memory limit + 512mb
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    ports:
+      # bedrock port
+      - 19132:19132/udp
+    networks:
+      - infrarust-velocity
+      - minecraft
+    environment:
+      TYPE: VELOCITY
+      # disable rcon
+      # is this default here?
+      ENABLE_RCON: false
+      # 1.21.(4/5) TBD
+      # using 1.21.5 for now
+      # TODO: version decision
+      MINECRAFT_VERSION: 1.21.4
+      # memory limit
+      MEMORY: 512m
+    volumes:
+      # TODO: add configs
+      # timezone
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+networks:
+  minecraft:
+    external: true
+  infrarust-velocity:

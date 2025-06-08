@@ -1,0 +1,77 @@
+name: minecraft-server
+services:
+  minecraft:
+    image: itzg/minecraft-server:java24-graalvm
+    container_name: minecraft
+    hostname: minecraft
+    restart: unless-stopped
+    stop_grace_period: 1m
+    tty: true
+    stdin_open: true
+    # memory limit + 2gb
+    deploy:
+      resources:
+        limits:
+          memory: 10g
+    environment:
+      EULA: true
+      GUI: false
+      # 1.21.(4/5) TBD
+      # using 1.21.5 for now
+      # TODO: version decision
+      VERSION: 1.21.4
+      # leaf server jar
+      CUSTOM_SERVER: /custom/server.jar
+      # enable rolling logs
+      # this should be default
+      ENABLE_ROLLING_LOGS: true
+      # disable rcon
+      # why is this default
+      ENABLE_RCON: false
+      # memory limit
+      MEMORY: 8G
+      # flags for better performance
+      USE_AIKAR_FLAGS: true
+      USE_SIMD_FLAGS: true
+      # custom flags
+      JVM_DD_OPTS: |
+        paper.playerconnection.keepalive=60
+        Paper.debugDynamicMissingKeys=false
+        disable.watchdog=true
+        Paper.skipServerPropertiesComments=true
+        Paper.debugInvalidSkullProfiles=false
+        paper.debug-sync-loads=false
+        debug.entities=false
+    networks:
+      - minecraft
+    volumes:
+      # put stuff here by default
+      # mostly cache
+      - minecraft:/data/
+      # logs
+      - minecraft-logs:/data/
+      # jar
+      - ../jar/server.jar:/custom/server.jar:ro
+      # plugins
+      - ../plugins/minecraft:/data/plugins:rw
+      # worlds
+      - ../worlds/world:/data/world:rw
+      - ../worlds/nether:/data/world_nether:rw
+      - ../worlds/end:/data/world_the_end:rw
+      # configs
+      - ../configs/minecraft/config:/data/config:rw
+      - ../configs/minecraft/bukkit/bukkit.yml:/data/bukkit.yml:rw
+      - ../configs/minecraft/bukkit/commands.yml:/data/commands.yml:rw
+      - ../configs/minecraft/spigot/spigot.yml:/data/spigot.yml:rw
+      - ../configs/minecraft/purpur/purpur.yml:/data/purpur.yml:rw
+      # timezone
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+volumes:
+  minecraft:
+  minecraft-logs:
+
+networks:
+  minecraft:
+    external: true

@@ -1,0 +1,18 @@
+entities:
+  spawning:
+    spawn-limits:
+      ambient: -1
+      axolotls: -1
+      creature: -1
+      monster: 70
+      underground_water_creature: -1
+      water_ambient: -1
+      water_creature: -1
+    ticks-per-spawn:
+      ambient: -1
+      axolotls: -1
+      creature: -1
+      monster: 1
+      underground_water_creature: -1
+      water_ambient: -1
+      water_creature: -1

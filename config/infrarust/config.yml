@@ -1,0 +1,51 @@
+# listening address
+bind: "0.0.0.0:25565"
+keepAliveTimeout: 30s
+
+# rate limiter
+filters:
+  rateLimiter:
+    # maximum number of requests allowed per time window
+    requestLimit: 10
+    # Duration of the time window (in seconds)
+    windowLength: 1
+    # block duration after limit exceeded (in seconds)
+    blockDuration: 300
+
+# proxy mode
+proxyMode: "passthrough"
+
+# connection timeout (in seconds)
+options:
+  connection_timeout: 60
+
+# configrations
+file_provider:
+  proxies_path: ["./proxies"]
+  file_type: "yaml"
+  # disable hot reload
+  # as its not needed now
+  watch: false
+
+# status cache
+cache:
+  status_ttl_seconds: 60
+  max_status_entries: 100
+
+# motd
+motds:
+  unknown:
+    # 1.21.(4/5) TBD
+    # using 1.21.5 for now
+    # TODO: version decision
+    version: "1.21.4"
+    max_players: 64
+    online_players: 0
+    text: "Unknown server"
+    # TODO: add server image
+    favicon: "data:image/png;base64,..."
+
+# disable telementry
+# as its not needed now
+telemetry:
+  enabled: false

@@ -1,31 +1,27 @@
-### keep ###
-# folder without contents on repo
-!.gitkeep
-
-# keep per world configuration files
-!paper-world.yml
-!gale-world.yml
-
 ### ignore ###
+# dont put server jar in repo
+# is not what git is made for
+/jar/*
+
 # dont put plugins in repo
 # is not what git is made for
 # and can get us in trouble because of paid plugins
 /plugins/*.jar
 
-# dont put datapack files in repo
+# dont put datapacks in repo
 # is not what git is made for
 /datapacks/*
 
 # dont put mappings in repo
 # is not what git is made for
-minecraft/plugins/.paper-remapped
+/plugins/minecraft/.paper-remapped
 
 # dont put world files in repo
 /worlds/world/*
 /worlds/nether/*
 /worlds/end/*
 
-# dont put log files in repo
+# dont put logs in repo
 /logs/*
 
 # dont put secrets in repo
@@ -34,3 +30,11 @@ minecraft/plugins/.paper-remapped
 
 ## plugin stuff that should not be put in repo
 /plugins/minecraft/spark/tmp-client/*
+
+### keep ###
+# folder without contents on repo
+!.gitkeep
+
+# keep per world configuration files
+!paper-world.yml
+!gale-world.yml

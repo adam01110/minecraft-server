@@ -29,3 +29,7 @@ attach-minecraft:
   docker compose -f ./compose/minecraft.yml attach minecraft
 attach-velocity:
   docker compose -f ./compose/proxy.yml attach velocity
+
+# setup
+setup:
+  docker network create minecraft
