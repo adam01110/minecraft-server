@@ -1,0 +1,26 @@
+# proxy
+up-proxy-dev:
+  docker compose -f ./compose/proxy.yml up -d
+down-proxy-dev:
+  docker compose -f ./compose/proxy.yml down
+logs-proxy-dev:
+  docker compose -f ./compose/proxy.yml logs
+
+# minecraft
+up-minecraft-dev:
+  docker compose -f ./compose/minecraft.yml up -d
+down-minecraft-dev:
+  docker compose -f ./compose/minecraft.yml down
+logs-minecraft-dev:
+  docker compose -f ./compose/minecraft.yml logs
+
+# attach
+attach-minecraft-dev:
+  docker compose -f ./compose/minecraft.yml attach minecraft-dev
+attach-velocity-dev:
+  docker compose -f ./compose/proxy.yml attach velocity-dev
+
+# setup
+setup-dev:
+  docker network create velocity-minecraft-dev
+  scripts/download-leaf.sh

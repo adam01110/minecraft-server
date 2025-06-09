@@ -1,7 +1,7 @@
 name: minecraft-server
 services:
   infrarust:
-    image: infrarust/infrarust
+    image: infrarust/infrarust:latest
     container_name: infrarust
     hostname: infrarust
     restart: unless-stopped
@@ -26,7 +26,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
 
   velocity:
-    image: infrarust/infrarust
+    image: itzg/mc-proxy:latest
     container_name: velocity
     hostname: velocity
     restart: unless-stopped

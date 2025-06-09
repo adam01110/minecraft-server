@@ -1,0 +1,41 @@
+name: minecraft-server-dev
+services:
+  velocity-dev:
+    image: itzg/mc-proxy
+    container_name: velocity-dev
+    hostname: velocity-dev
+    restart: unless-stopped
+    stop_grace_period: 1m
+    # memory limit + 512mb
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    ports:
+      # java port
+      - 25565:25565
+      # bedrock port
+      - 19132:19132/udp
+    networks:
+      # network for velocity to minecraft communication
+      - velocity-minecraft-dev
+    environment:
+      TYPE: VELOCITY
+      # disable rcon
+      # is this default here?
+      ENABLE_RCON: false
+      # 1.21.(4/5) TBD
+      # using 1.21.5 for now
+      # TODO: version decision
+      MINECRAFT_VERSION: 1.21.4
+      # memory limit
+      MEMORY: 512m
+    volumes:
+      # TODO: add configs
+      # timezone
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+networks:
+  velocity-minecraft-dev:
+    external: true
