@@ -35,4 +35,4 @@ setup:
   docker network create velocity-minecraft
   docker network create mariadb
   docker network create valkey
-  scripts/download.sh
+  scripts/download-leaf.sh

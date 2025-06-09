@@ -4,7 +4,7 @@
 REPO="Winds-Studio/Leaf"
 JAR_DIR="$(dirname "$(cd "$(dirname "$0")" && pwd)")/jar"
 VERSION_FILE="$JAR_DIR/leaf-version.txt"
-JAR_FILE="$JAR_DIR/server.jar"
+JAR_FILE="$JAR_DIR/leaf.jar"
 TMP_JSON="$JAR_DIR/latest-release.json"
 
 # Fetch latest release JSON

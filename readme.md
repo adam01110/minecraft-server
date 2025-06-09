@@ -32,6 +32,7 @@
 - nerd fonts
 - just
 - jq
+- docker & docker compose
 
 #### recommended
 
