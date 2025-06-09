@@ -4,6 +4,7 @@
       "compose/minecraft.yml",
       "compose/proxy.yml",
       "compose/database.yml",
+      "compose/broadcaster.yml",
       "dev/compose/proxy.yml",
       "dev/compose/minecraft.yml"
     ]

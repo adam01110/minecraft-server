@@ -21,6 +21,7 @@ services:
       # TODO: version decision
       VERSION: 1.21.4
       # leaf server jar
+      TYPE: custom
       CUSTOM_SERVER: /custom/leaf.jar
       # enable rolling logs
       # this should be default
@@ -44,13 +45,13 @@ services:
         debug.entities=false
     networks:
       # network for velocity to minecraft communication
-      - velocity-minecraft
+      - velocity-minecraft-dev
     volumes:
       # put stuff here by default
       # mostly cache
-      - minecraft:/data/
+      - minecraft-dev:/data/
       # logs
-      - minecraft-logs:/data/logs
+      - minecraft-dev-logs:/data/logs
       # jar
       - ../../jar/leaf.jar:/custom/leaf.jar:ro
       # plugins
@@ -62,18 +63,18 @@ services:
       # datapacks
       - ../datapacks/:/data/world/datapacks
       # configs
-      - ../configs/minecraft/config:/data/config
-      - ../configs/minecraft/bukkit/bukkit.yml:/data/bukkit.yml
-      - ../configs/minecraft/bukkit/commands.yml:/data/commands.yml
-      - ../configs/minecraft/spigot/spigot.yml:/data/spigot.yml
-      - ../configs/minecraft/purpur/purpur.yml:/data/purpur.yml
+      - ../config/minecraft/config:/data/config
+      - ../config/minecraft/bukkit/bukkit.yml:/data/bukkit.yml
+      - ../config/minecraft/bukkit/commands.yml:/data/commands.yml
+      - ../config/minecraft/spigot/spigot.yml:/data/spigot.yml
+      - ../config/minecraft/purpur/purpur.yml:/data/purpur.yml
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
 
 volumes:
-  minecraft:
-  minecraft-logs:
+  minecraft-dev:
+  minecraft-dev-logs:
 
 networks:
   velocity-minecraft-dev:

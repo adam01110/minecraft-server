@@ -11,18 +11,21 @@ services:
       resources:
         limits:
           memory: 1g
-    labels:
-      - com.centurylinklabs.watchtower.enable=true
     secrets:
       - mariadb-pass
     environment:
+      # rootless
       PUID: 1000
       PGID: 1000
+      # password
       FILE__MYSQL_ROOT_PASSWORD: /run/secrets/mariadb-pass
     networks:
+      # network for mariadb to minecraft & velocity communication
       - mariadb
     volumes:
+      # data
       - mariadb:/config
+      # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
 
@@ -38,9 +41,12 @@ services:
         limits:
           memory: 512mb
     networks:
+      # network for valkey to minecraft & velocity communication
       - valkey
     volumes:
+      # data
       - valkey:/data
+      # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     healthcheck:

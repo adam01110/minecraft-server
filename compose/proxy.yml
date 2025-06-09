@@ -44,6 +44,8 @@ services:
       - infrarust-velocity
       # network for velocity to minecraft communication
       - velocity-minecraft
+      # network for broadcaster to velocity communication
+      - broadcaster-velocity
       # networks for databases
       - mariadb
       - valkey
@@ -67,6 +69,8 @@ services:
 networks:
   infrarust-velocity:
   velocity-minecraft:
+    external: true
+  broadcaster-velocity:
     external: true
   mariadb:
     external: true

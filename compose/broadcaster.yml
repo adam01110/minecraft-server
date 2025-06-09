@@ -1,0 +1,25 @@
+services:
+  broadcaster:
+    image: ghcr.io/mcxboxbroadcast/standalone:latest
+    container_name: broadcaster
+    hostname: broadcaster
+    restart: unless-stopped
+    stop_grace_period: 1m
+    # memory limit
+    deploy:
+      resources:
+        limits:
+          memory: 6g
+    networks:
+      # network for broadcaster to velocity communication
+      - broadcaster-velocity
+    volumes:
+      # config
+      - ../config/broadcaster:/opt/app/config
+      # timezone
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+networks:
+  broadcaster-velocity:
+    external: true

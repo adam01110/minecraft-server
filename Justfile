@@ -22,6 +22,14 @@ down-minecraft:
 logs-minecraft:
   docker compose -f ./compose/minecraft.yml logs
 
+# broadcaster
+up-broadcaster:
+  docker compose -f ./compose/broadcaster.yml up -d
+down-broadcaster:
+  docker compose -f ./compose/broadcaster.yml down
+logs-broadcaster:
+  docker compose -f ./compose/broadcaster.yml logs
+
 # attach
 attach-mariadb:
   docker exec -it mariadb mysql -u root -p
@@ -33,6 +41,7 @@ attach-velocity:
 # setup
 setup:
   docker network create velocity-minecraft
+  docker network create broadcaster-velocity
   docker network create mariadb
   docker network create valkey
   scripts/download-leaf.sh

@@ -10,6 +10,7 @@
 - **Leaf:** [website](https://www.leafmc.one/), [github](https://github.com/Winds-Studio/Leaf)
 - **Velocity:** [website](https://papermc.io/software/velocity), [github](https://github.com/PaperMC/Velocity)
 - **Infrarust:** [website](https://infrarust.dev/), [github](https://github.com/shadowner/infrarust)
+- **Broadcaster:** [github](https://github.com/MCXboxBroadcast/Broadcaster)
 - **Mariadb:** [website](https://mariadb.org/), [github](https://github.com/MariaDB/server)
 - **Valkey:** [website](https://valkey.io/), [github](https://github.com/valkey-io/valkey)
 

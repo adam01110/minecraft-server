@@ -23,4 +23,4 @@ attach-velocity-dev:
 # setup
 setup-dev:
   docker network create velocity-minecraft-dev
-  scripts/download-leaf.sh
+  ../scripts/download-leaf.sh

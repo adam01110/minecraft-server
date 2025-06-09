@@ -1,35 +1,55 @@
-### ignore #### dont put server jar and version data in repo
+### ignore ###
+# dont put server jar and version data in repo
 /jar/*
 
 # dont put plugins in repo
 # and can get us in trouble because of paid plugins
 /plugins/*.jar
 
+# dont put plugin stuff in repo
+/dev/plugins/*
+
 # dont put datapacks in repo
 /datapacks/*
+# and the dev datapacks
+/dev/datapacks/*
 
 # dont put mappings in repo
 /plugins/minecraft/.paper-remapped
+# and the dev mappings
+/dev/datapacks/*
 
 # dont put world files in repo
 /worlds/world/*
 /worlds/nether/*
 /worlds/end/*
-
-# dont put logs in repo
-/logs/*
+# and the dev worlds
+/dev/worlds/world/*
+/dev/worlds/nether/*
+/dev/worlds/end/*
 
 # dont put secrets in repo
 # these are for the minecraft container
 /secrets/*
 
+# dont put broadcaster cache & logs in repo
+# i would put this in docker volumes but it runs competely rootless
+/config/broadcaster/cache
+/config/broadcaster/logs
+
 ## plugin stuff that should not be put in repo
 /plugins/minecraft/spark/tmp-client/*
+## and the dev stuff
+/dev/plugins/minecraft/spark/tmp-client/*
 
 ### keep ###
 # folder without contents on repo
 !.gitkeep
 
 # keep per world configuration files
-!paper-world.yml
-!gale-world.yml
+!/worlds/*/paper-world.yml
+!/worlds/*/gale-world.yml
+
+# keep default dev plugin configs
+!/dev/plugins/minecraft/bStats
+!/dev/plugins/minecraft/spark
