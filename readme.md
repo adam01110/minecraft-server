@@ -21,3 +21,18 @@
 #### velocity plugins
 
 - todo
+
+## Contributing
+
+#### needed tools
+
+[install guide](dev/install.md)
+
+- git
+- nerd fonts
+- just
+- jq
+
+#### recommended
+
+- vscode (or a fork of it, but anything is fine if you want to use that)
