@@ -32,4 +32,7 @@ attach-velocity:
 
 # setup
 setup:
-  docker network create minecraft
+  docker network create velocity-minecraft
+  docker network create mariadb
+  docker network create valkey
+  scripts/download.sh

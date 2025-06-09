@@ -43,27 +43,31 @@ services:
         paper.debug-sync-loads=false
         debug.entities=false
     networks:
-      - minecraft
+      # network for velocity to minecraft communication
+      - velocity-minecraft
+      # networks for databases
+      - mariadb
+      - valkey
     volumes:
       # put stuff here by default
       # mostly cache
       - minecraft:/data/
       # logs
-      - minecraft-logs:/data/
+      - minecraft-logs:/data/logs
       # jar
       - ../jar/server.jar:/custom/server.jar:ro
       # plugins
-      - ../plugins/minecraft:/data/plugins:rw
+      - ../plugins/minecraft:/data/plugins
       # worlds
-      - ../worlds/world:/data/world:rw
-      - ../worlds/nether:/data/world_nether:rw
-      - ../worlds/end:/data/world_the_end:rw
+      - ../worlds/world:/data/world
+      - ../worlds/nether:/data/world_nether
+      - ../worlds/end:/data/world_the_end
       # configs
-      - ../configs/minecraft/config:/data/config:rw
-      - ../configs/minecraft/bukkit/bukkit.yml:/data/bukkit.yml:rw
-      - ../configs/minecraft/bukkit/commands.yml:/data/commands.yml:rw
-      - ../configs/minecraft/spigot/spigot.yml:/data/spigot.yml:rw
-      - ../configs/minecraft/purpur/purpur.yml:/data/purpur.yml:rw
+      - ../configs/minecraft/config:/data/config
+      - ../configs/minecraft/bukkit/bukkit.yml:/data/bukkit.yml
+      - ../configs/minecraft/bukkit/commands.yml:/data/commands.yml
+      - ../configs/minecraft/spigot/spigot.yml:/data/spigot.yml
+      - ../configs/minecraft/purpur/purpur.yml:/data/purpur.yml
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
@@ -73,5 +77,9 @@ volumes:
   minecraft-logs:
 
 networks:
-  minecraft:
+  velocity-minecraft:
+    external: true
+  mariadb:
+    external: true
+  valkey:
     external: true

@@ -15,10 +15,12 @@ services:
       # port for java
       - 25565:25565
     networks:
+      # network for infrarust to velocity communication
       - infrarust-velocity
     volumes:
       # config
-      - ../config/infrarust:/etc/infrarust/config.yaml
+      - ../config/infrarust/config.yaml:/etc/infrarust/config.yaml
+      - ../config/infrarust/proxies:/etc/infrarust/proxies
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
@@ -38,8 +40,13 @@ services:
       # bedrock port
       - 19132:19132/udp
     networks:
+      # network for infrarust to velocity communication
       - infrarust-velocity
-      - minecraft
+      # network for velocity to minecraft communication
+      - velocity-minecraft
+      # networks for databases
+      - mariadb
+      - valkey
     environment:
       TYPE: VELOCITY
       # disable rcon
@@ -58,6 +65,10 @@ services:
       - /etc/localtime:/etc/localtime:ro
 
 networks:
-  minecraft:
-    external: true
   infrarust-velocity:
+  velocity-minecraft:
+    external: true
+  mariadb:
+    external: true
+  valkey:
+    external: true

@@ -1,2 +1,64 @@
 name: minecraft-server
 services:
+  mariadb:
+    image: lscr.io/linuxserver/mariadb:latest
+    container_name: mariadb
+    hostname: mariadb
+    restart: unless-stopped
+    stop_grace_period: 1m
+    # memory limit
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    secrets:
+      - mariadb-pass
+    environment:
+      PUID: 1000
+      PGID: 1000
+      FILE__MYSQL_ROOT_PASSWORD: /run/secrets/mariadb-pass
+    networks:
+      - mariadb
+    volumes:
+      - mariadb:/config
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+  valkey:
+    image: valkey/valkey:alpine
+    container_name: valkey
+    hostname: valkey
+    restart: unless-stopped
+    stop_grace_period: 1m
+    # memory limit
+    deploy:
+      resources:
+        limits:
+          memory: 512mb
+    networks:
+      - valkey
+    volumes:
+      - valkey:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    healthcheck:
+      test: ["CMD", "valkey-cli", "ping"]
+      interval: 1m
+      timeout: 5s
+      retries: 5
+      start_interval: 5s
+      start_period: 30s
+
+volumes:
+  mariadb:
+  valkey:
+
+networks:
+  mariadb:
+  valkey:
+
+secrets:
+  mariadb-pass:
+    file: ../secrets/mariadb-pass.txt
