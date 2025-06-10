@@ -34,7 +34,8 @@ services:
       # memory limit
       MEMORY: 2G
       # flags for better performance
-      USE_AIKAR_FLAGS: true
+      USE_MEOWICE_FLAGS: true
+      USE_MEOWICE_GRAALVM_FLAGS: true
       USE_SIMD_FLAGS: true
       # custom flags
       JVM_DD_OPTS: |
