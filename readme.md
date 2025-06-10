@@ -1,44 +1,60 @@
-# minecraft-server
+## <img src="assets/info.svg" width="16" height="16"> Server Information
 
-- **name:** untitled
-- **version:** 1.21.(4/5 TBD)
-- **platfrom:** java & bedrock
-- **discord:** [invite](https://discord.gg/zV7FcdJRgj)
+- **Version:** 1.21.4/1.21.5 (TBD)
+- **Platforms:** Java Edition & Bedrock Edition
+- **Discord:** [Join our community](https://discord.gg/zV7FcdJRgj)
 
-### software
+## ![tools](assets/icons/tools.svg) Tech Stack
 
-| Software                | Website                                                              | GitHub                                                   |
-| ----------------------- | -------------------------------------------------------------------- | -------------------------------------------------------- |
-| Leaf                    | [website](https://www.leafmc.one/)                                   | [github](https://github.com/Winds-Studio/Leaf)           |
-| Velocity                | [website](https://papermc.io/software/velocity)                      | [github](https://github.com/PaperMC/Velocity)            |
-| Infrarust               | [website](https://infrarust.dev/)                                    | [github](https://github.com/shadowner/infrarust)         |
-| Broadcaster             |                                                                      | [github](https://github.com/MCXboxBroadcast/Broadcaster) |
-| Mariadb                 | [website](https://mariadb.org/)                                      | [github](https://github.com/MariaDB/server)              |
-| Valkey                  | [website](https://valkey.io/)                                        | [github](https://github.com/valkey-io/valkey)            |
-| docker-minecraft-server | [website](https://docker-minecraft-server.readthedocs.io/en/latest/) | [github](github.com/itzg/docker-minecraft-server)        |
-| docker-mc-proxy         |                                                                      | [github](https://github.com/itzg/docker-mc-proxy)        |
+### Infrastructure
 
-#### paper/spigot plugins
+| Component                   | Description                                | Links                                                                                                                                  |
+| --------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leaf**                    | High-performance Minecraft server software | [Website](https://www.leafmc.one/) • [GitHub](https://github.com/Winds-Studio/Leaf)                                                    |
+| **Velocity**                | Modern proxy for Minecraft networks        | [Website](https://papermc.io/software/velocity) • [GitHub](https://github.com/PaperMC/Velocity)                                        |
+| **Infrarust**               | Rust-based infrastructure tooling          | [Website](https://infrarust.dev/) • [GitHub](https://github.com/shadowner/infrarust)                                                   |
+| **Broadcaster**             | Xbox Live authentication bridge            | [GitHub](https://github.com/MCXboxBroadcast/Broadcaster)                                                                               |
+| **docker-minecraft-server** | Dockerized Minecraft server                | [Documentation](https://docker-minecraft-server.readthedocs.io/en/latest/) • [GitHub](https://github.com/itzg/docker-minecraft-server) |
+| **docker-mc-proxy**         | Dockerized Minecraft proxy                 | [GitHub](https://github.com/itzg/docker-mc-proxy)                                                                                      |
 
-- [spark](https://spark.lucko.me/)
-- todo
+### Database & Cache
 
-#### velocity plugins
+| Component   | Description             | Links                                                                         |
+| ----------- | ----------------------- | ----------------------------------------------------------------------------- |
+| **MariaDB** | Primary database server | [Website](https://mariadb.org/) • [GitHub](https://github.com/MariaDB/server) |
+| **Valkey**  | In-memory data store    | [Website](https://valkey.io/) • [GitHub](https://github.com/valkey-io/valkey) |
 
-- todo
+## ![plugin](assets/icons/plugin.svg) Plugins
 
-## Contributing
+### Server Plugins (Paper/Spigot)
 
-#### needed tools
+- **[Spark](https://spark.lucko.me/)** - Performance profiler and monitoring
+- More plugins coming soon...
 
-[install guide](dev/install.md)
+### Proxy Plugins (Velocity)
 
-- git
-- nerd fonts
-- just
-- jq
-- docker & docker compose
+- More plugins coming soon...
 
-#### recommended
+## ![rocket](assets/icons/rocket.svg) Development Setup
 
-- vscode (or a fork of it, but anything is fine if you want to use that)
+### Required Tools
+
+- **Git** - Version control
+- **Nerd Fonts** - Enhanced terminal display
+- **Just** - Command runner
+- **jq** - JSON processor
+- **Docker & Docker Compose** - Containerization
+- **Trashy** - Safe file deletion
+
+### Recommended Tools
+
+- **Visual Studio Code** (fork, or any preferred editor)
+- **Lazydocker** - Docker container management
+
+## ![handshake](assets/icons/handshake.svg) Contributing
+
+We welcome contributions! Please ensure you have the required tools installed before getting started.
+
+---
+
+_This server is currently in development. Join our Discord for updates and community discussions._

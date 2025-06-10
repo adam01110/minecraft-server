@@ -120,7 +120,7 @@ performance:
   reduce-packets:
     reduce-entity-move-packets: false
   reduce-chunk-source-updates:
-    # Reduces chunk source updates on inter-chunk player moves. (Recommended to enable)
+    # Reduces chunk source updates on inter-chunk player moves.
     enabled: false
   preload-mob-spawning-position:
     enabled: false
@@ -129,11 +129,11 @@ performance:
   optimize-player-movement: true
   # Whether to only tick / update items in main hand and offhand instead of the entire inventory.
   only-tick-items-in-hand: false
+  optimize-block-entities: true
   cache-biome:
     enabled: false
     mob-spawning: false
     advancements: false
-  optimise-block-entities: true
   # May cause the inconsistent order of future compose tasks.
   faster-structure-gen-future-sequencing: true
   # Use faster random generator?

@@ -52,7 +52,9 @@
 !/worlds/*/paper-world.yml
 !/worlds/*/gale-world.yml
 
-# keep default dev plugin configs
+# keep default dev configs
 !/dev/plugins/minecraft/bStats
 !/dev/plugins/minecraft/spark
 !/dev/plugins/velocity/bStats
+# keep default dev configs
+!/dev/datapacks/bukkit

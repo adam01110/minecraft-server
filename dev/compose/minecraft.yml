@@ -53,9 +53,9 @@ services:
     volumes:
       # put stuff here by default
       # mostly cache
-      - minecraft-dev:/data/
+      - minecraft:/data/
       # logs
-      - minecraft-dev-logs:/data/logs
+      - minecraft-logs:/data/logs
       # jar
       - ../../jar/leaf.jar:/custom/leaf.jar:ro
       # plugins
@@ -78,8 +78,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
 
 volumes:
-  minecraft-dev:
-  minecraft-dev-logs:
+  minecraft:
+  minecraft-logs:
 
 networks:
   velocity-minecraft-dev:

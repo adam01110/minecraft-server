@@ -25,3 +25,7 @@ setup-dev:
   docker network create velocity-minecraft-dev
   ../scripts/download-leaf.sh
   openssl rand -base64 9 | tr -dc 'a-zA-Z0-9' | head -c12 > secrets/forwarding.secret
+
+# reset
+reset-dev:
+  ../scripts/reset-dev.sh

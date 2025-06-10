@@ -64,11 +64,11 @@ services:
       # config
       - ../config/velocity/config.yml:/config/config.yml
       # lang
-      - ../config/velocity/lang:/config/lang
+      - ../config/velocity/lang:/server/lang
       # logs
-      - velocity-logs:/config/logs
+      - velocity-logs:/server/logs
       # forwarding secret
-      - ../secrets/forwarding.secret:/config/forwarding.secret
+      - ../secrets/forwarding.secret:/server/forwarding.secret
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
