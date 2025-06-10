@@ -31,6 +31,8 @@
 # dont put secrets in repo
 # these are for the minecraft container
 /secrets/*
+# and the dev secrets
+/dev/secrets/*
 
 # dont put broadcaster cache & logs in repo
 # i would put this in docker volumes but it runs competely rootless

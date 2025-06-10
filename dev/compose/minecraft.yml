@@ -13,6 +13,8 @@ services:
       resources:
         limits:
           memory: 4g
+    secrets:
+      - forwarding-secret
     environment:
       EULA: true
       GUI: false
@@ -43,6 +45,8 @@ services:
         Paper.debugInvalidSkullProfiles=false
         paper.debug-sync-loads=false
         debug.entities=false
+      # forwarding secret
+      CFG_FORWARDING_SECRET_FILE: /run/secrets/forwarding-secret
     networks:
       # network for velocity to minecraft communication
       - velocity-minecraft-dev
@@ -80,3 +84,7 @@ volumes:
 networks:
   velocity-minecraft-dev:
     external: true
+
+secrets:
+  forwarding-secret:
+    file: ../secrets/forwarding.secret
