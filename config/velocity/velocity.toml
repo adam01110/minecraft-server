@@ -16,7 +16,7 @@ show-max-players = 500
 online-mode = true
 
 # Should the proxy enforce the new public key security standard? By default, this is on.
-force-key-authentication = true
+force-key-authentication = false
 
 # If client's ISP/AS sent from this proxy is different from the one from Mojang's
 # authentication server, the player is kicked. This disallows some VPN and proxy
@@ -34,7 +34,7 @@ prevent-client-proxy-connections = false
 #                  unable to implement network level firewalling (on a shared host).
 # - "modern":      Forward player IPs and UUIDs as part of the login process using
 #                  Velocity's native forwarding. Only applicable for Minecraft 1.13 or higher.
-player-info-forwarding-mode = "NONE"
+player-info-forwarding-mode = "modern"
 
 # If you are using modern or BungeeGuard IP forwarding, configure a file that contains a unique secret here.
 # The file is expected to be UTF-8 encoded and not empty.
@@ -80,9 +80,10 @@ enable-player-address-logging = true
 #lobby = "127.0.0.1:30066"
 #factions = "127.0.0.1:30067"
 #minigames = "127.0.0.1:30068"
+minecraft = "minecraft:25565"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
-try = ["lobby"]
+try = ["minecraft"]
 
 [forced-hosts]
 # Configure your forced hosts here.
@@ -111,10 +112,10 @@ read-timeout = 30000
 
 # Enables compatibility with HAProxy's PROXY protocol. If you don't know what this is for, then
 # don't enable it.
-haproxy-protocol = false
+haproxy-protocol = true
 
 # Enables TCP fast open support on the proxy. Requires the proxy to run on Linux.
-tcp-fast-open = false
+tcp-fast-open = true
 
 # Enables BungeeCord plugin messaging channel support on Velocity.
 bungee-plugin-message-channel = true
@@ -146,7 +147,7 @@ accepts-transfers = false
 # with a lot of incoming connections, and provide better CPU utilization than the existing
 # strategy of having a single thread accepting connections and distributing them to worker
 # threads. Disabled by default. Requires Linux or macOS.
-enable-reuse-port = false
+enable-reuse-port = true
 
 # How fast (in milliseconds) are clients allowed to send commands after the last command
 # By default this is 50ms (20 commands per second)
