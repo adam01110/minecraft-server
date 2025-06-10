@@ -1,10 +1,10 @@
-## <img src="assets/info.svg" width="16" height="16"> Server Information
+## <img src="assets/icons/info.svg" width="16" height="16"> Server Information
 
 - **Version:** 1.21.4/1.21.5 (TBD)
 - **Platforms:** Java Edition & Bedrock Edition
 - **Discord:** [Join our community](https://discord.gg/zV7FcdJRgj)
 
-## ![tools](assets/icons/tools.svg) Tech Stack
+## <img src="assets/icons/tools.svg" width="16" height="16"> Tech Stack
 
 ### Infrastructure
 
@@ -24,7 +24,7 @@
 | **MariaDB** | Primary database server | [Website](https://mariadb.org/) • [GitHub](https://github.com/MariaDB/server) |
 | **Valkey**  | In-memory data store    | [Website](https://valkey.io/) • [GitHub](https://github.com/valkey-io/valkey) |
 
-## ![plugin](assets/icons/plugin.svg) Plugins
+## <img src="assets/icons/plugin.svg" width="16" height="16"> Plugins
 
 ### Server Plugins (Paper/Spigot)
 
@@ -35,7 +35,7 @@
 
 - More plugins coming soon...
 
-## ![rocket](assets/icons/rocket.svg) Development Setup
+## <img src="assets/icons/rocket.svg" width="16" height="16"> Development Setup
 
 ### Required Tools
 
@@ -51,7 +51,7 @@
 - **Visual Studio Code** (fork, or any preferred editor)
 - **Lazydocker** - Docker container management
 
-## ![handshake](assets/icons/handshake.svg) Contributing
+## <img src="assets/icons/handshake.svg" width="16" height="16"> Contributing
 
 We welcome contributions! Please ensure you have the required tools installed before getting started.
 

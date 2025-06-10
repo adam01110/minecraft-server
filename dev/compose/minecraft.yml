@@ -45,7 +45,8 @@ services:
         Paper.debugInvalidSkullProfiles=false
         paper.debug-sync-loads=false
         debug.entities=false
-      # forwarding secret
+      # secrets
+      REPLACE_ENV_VARIABLES: true
       CFG_FORWARDING_SECRET_FILE: /run/secrets/forwarding-secret
     networks:
       # network for velocity to minecraft communication

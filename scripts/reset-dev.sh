@@ -1,19 +1,39 @@
 #!/usr/bin/env bash
 
-# config
-VOLUMES="minecraft-server-dev_velocity-logs minecraft-server-dev_minecraft minecraft-server-dev_minecraft-logs"
-DIRECTORIES="datapacks plugins/minecraft plugins/minecraft worlds/world worlds/nether worlds/end"
-KEEP_FILES="bukkit .paper-remapped bStats spark gale-world.yml paper-world.yml datapacks"
+VOLUMES=(
+  "minecraft-server-dev_velocity-logs"
+  "minecraft-server-dev_minecraft"
+  "minecraft-server-dev_minecraft-logs"
+)
+
+DIRECTORIES=(
+  "datapacks"
+  "plugins/minecraft"
+  "plugins/minecraft"
+  "worlds/world"
+  "worlds/nether"
+  "worlds/end"
+)
+
+KEEP_FILES=(
+  "bukkit"
+  ".paper-remapped"
+  "bStats"
+  "spark"
+  "gale-world.yml"
+  "paper-world.yml"
+  "datapacks"
+)
 
 # loop through all volumes and delete
-for volume in $VOLUMES; do
+for volume in "${VOLUMES[@]}"; do
   echo " Deleting docker volume: $volume"
   docker volume rm "$volume" >/dev/null 2>&1
 done
 
 # count total items to process
 total_items=0
-for directory in $DIRECTORIES; do
+for directory in "${DIRECTORIES[@]}"; do
   if [[ -d "$directory" ]]; then
     for item in "$directory"/*; do
       if [[ -e "$item" ]]; then
@@ -29,7 +49,7 @@ mkdir -p "$temp_folder"
 
 # process items with progress bar
 processed_items=0
-for directory in $DIRECTORIES; do
+for directory in "${DIRECTORIES[@]}"; do
   if [[ -d "$directory" ]]; then
     for item in "$directory"/*; do
       if [[ -e "$item" ]]; then
@@ -51,7 +71,15 @@ for directory in $DIRECTORIES; do
         done
 
         basename_item=$(basename "$item")
-        if [[ $KEEP_FILES =~ $basename_item ]]; then
+        keep_file=false
+        for keep in "${KEEP_FILES[@]}"; do
+          if [[ "$basename_item" == "$keep" ]]; then
+            keep_file=true
+            break
+          fi
+        done
+
+        if [[ "$keep_file" == true ]]; then
           action="Keeping"
           icon="󰆓"
         else
