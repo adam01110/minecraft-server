@@ -37,7 +37,7 @@ motds:
   unknown:
     max_players: 64
     online_players: 0
-    text: "Unknown server"
+    text: "Unknown server§b§d§f§d§b"
     # TODO: add server image
     favicon: "data:image/png;base64,..."
 
