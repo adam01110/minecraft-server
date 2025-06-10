@@ -53,3 +53,4 @@
 # keep default dev plugin configs
 !/dev/plugins/minecraft/bStats
 !/dev/plugins/minecraft/spark
+!/dev/plugins/velocity/bStats

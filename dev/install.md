@@ -36,7 +36,7 @@ sudo pacman -S ttf-jetbrains-mono-nerd
 # Install script
 cd $HOME/Downloads
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts  # <-- MISSING: need to cd into the cloned directory
+cd nerd-fonts
 ./install.sh JetBrainsMono
 ```
 
@@ -44,16 +44,16 @@ cd nerd-fonts  # <-- MISSING: need to cd into the cloned directory
 
 ```sh
 # Debian/Ubuntu (post Debian 13 & Ubuntu 24.04)
-sudo apt install just  # <-- MISSING sudo
+sudo apt install just
 
 # Debian/Ubuntu (pre Debian 13 & Ubuntu 24.04)
 wget -qO - 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
 echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
 sudo apt update
-sudo apt install just  # <-- MISSING sudo
+sudo apt install just
 
 # Fedora
-sudo dnf install just  # <-- MISSING sudo
+sudo dnf install just
 # Arch Linux
 sudo pacman -S just
 

@@ -1,3 +1,4 @@
+name: minecraft-server
 services:
   broadcaster:
     image: ghcr.io/mcxboxbroadcast/standalone:latest

@@ -31,10 +31,20 @@ services:
       # memory limit
       MEMORY: 512m
     volumes:
-      # TODO: add configs
+      # config
+      - ../config/velocity/config.yml:/config/config.yml
+      # lang
+      - ../config/velocity/lang:/config/lang
+      # logs
+      - velocity-logs:/config/logs
+      # forwarding secret
+      - ../secrets/forwarding.secret:/config/forwarding.secret
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
+
+volumes:
+  velocity-logs:
 
 networks:
   velocity-minecraft-dev:

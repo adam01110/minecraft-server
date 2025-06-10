@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Configuration
 REPO="Winds-Studio/Leaf"
@@ -28,7 +28,7 @@ LAST_ASSET=""
 if [ -f "$VERSION_FILE" ]; then
   LAST_ASSET=$(cat "$VERSION_FILE")
 fi
-ASSET_NAME_NO_EXT=$(echo "$ASSET_NAME" | sed 's/\.jar$//')
+ASSET_NAME_NO_EXT="${ASSET_NAME%.jar}"
 if [ "$ASSET_NAME_NO_EXT" = "$LAST_ASSET" ]; then
   echo "󰄬 Already up to date ($LAST_ASSET)"
   rm -f "$TMP_JSON"

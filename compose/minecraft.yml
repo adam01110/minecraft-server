@@ -71,6 +71,7 @@ services:
       - ../config/minecraft/bukkit/commands.yml:/data/commands.yml
       - ../config/minecraft/spigot/spigot.yml:/data/spigot.yml
       - ../config/minecraft/purpur/purpur.yml:/data/purpur.yml
+      - ../config/minecraft/server/server.properties:/data/server.properties
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro

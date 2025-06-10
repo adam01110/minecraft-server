@@ -35,10 +35,6 @@ cache:
 # motd
 motds:
   unknown:
-    # 1.21.(4/5) TBD
-    # using 1.21.5 for now
-    # TODO: version decision
-    version: "1.21.4"
     max_players: 64
     online_players: 0
     text: "Unknown server"
