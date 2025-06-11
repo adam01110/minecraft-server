@@ -8,14 +8,14 @@
 
 ### Infrastructure
 
-| Component                   | Description                                | Links                                                                                                                                  |
-| --------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **Leaf**                    | High-performance Minecraft server software | [Website](https://www.leafmc.one/) • [GitHub](https://github.com/Winds-Studio/Leaf)                                                    |
-| **Velocity**                | Modern proxy for Minecraft networks        | [Website](https://papermc.io/software/velocity) • [GitHub](https://github.com/PaperMC/Velocity)                                        |
-| **Infrarust**               | Rust-based infrastructure tooling          | [Website](https://infrarust.dev/) • [GitHub](https://github.com/shadowner/infrarust)                                                   |
-| **Broadcaster**             | Xbox Live authentication bridge            | [GitHub](https://github.com/MCXboxBroadcast/Broadcaster)                                                                               |
-| **docker-minecraft-server** | Dockerized Minecraft server                | [Documentation](https://docker-minecraft-server.readthedocs.io/en/latest/) • [GitHub](https://github.com/itzg/docker-minecraft-server) |
-| **docker-mc-proxy**         | Dockerized Minecraft proxy                 | [GitHub](https://github.com/itzg/docker-mc-proxy)                                                                                      |
+| Component                   | Description                                                | Links                                                                                                                                  |
+| --------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leaf**                    | High-performance Minecraft server software                 | [Website](https://www.leafmc.one/) • [GitHub](https://github.com/Winds-Studio/Leaf)                                                    |
+| **Velocity**                | Modern proxy for Minecraft networks                        | [Website](https://papermc.io/software/velocity) • [GitHub](https://github.com/PaperMC/Velocity)                                        |
+| **Infrarust**               | Universal Minecraft Reverse Proxy                          | [Website](https://infrarust.dev/) • [GitHub](https://github.com/shadowner/infrarust)                                                   |
+| **Broadcaster**             | Geyser extension that broadcasts the server over Xbox Live | [GitHub](https://github.com/MCXboxBroadcast/Broadcaster)                                                                               |
+| **docker-minecraft-server** | Dockerized Minecraft server                                | [Documentation](https://docker-minecraft-server.readthedocs.io/en/latest/) • [GitHub](https://github.com/itzg/docker-minecraft-server) |
+| **docker-mc-proxy**         | Dockerized Minecraft proxy                                 | [GitHub](https://github.com/itzg/docker-mc-proxy)                                                                                      |
 
 ### Database & Cache
 
