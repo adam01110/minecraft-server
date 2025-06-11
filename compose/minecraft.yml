@@ -82,6 +82,8 @@ services:
       - ../config/minecraft/spigot/spigot.yml:/data/spigot.yml
       - ../config/minecraft/purpur/purpur.yml:/data/purpur.yml
       - ../config/minecraft/server/server.properties:/data/server.properties
+      # geyser key
+      - ../secrets/key.pem:/data/plugins/floodgate/key.pem:ro
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro

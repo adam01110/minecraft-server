@@ -37,6 +37,7 @@
 - **[Chunky](https://github.com/pop4959/Chunky)** - Pre-generates chunks, quickly and efficiently
 - **[KnockbackSync](https://modrinth.com/plugin/knockbacksync)** - Plugin for fair knockback regardless of ping
 - **[Creeper Recover](https://github.com/HttpRafa/creeper-recover)** - Recovers damage caused by creepers
+- **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
 
 ### Server Datapacks
 
@@ -48,6 +49,8 @@
 - **[PacketEvents](https://github.com/retrooper/packetevents)** - Library for Minecraft packet manipulation
 - **[SignedVelocity](https://github.com/4drian3d/SignedVelocity)** - Cancel or modify messages from Velocity without problems
 - **[ViaVersion](https://viaversion.com/)** - Allow newer clients to connect to older servers
+- **[Geysermc](https://geysermc.org/)** - A bridge/proxy allowing bedrock to connect to java
+- **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
 
 ## <img src="assets/icons/rocket.svg" width="16" height="16"> Development Setup
 

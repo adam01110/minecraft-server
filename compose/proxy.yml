@@ -70,13 +70,21 @@ services:
       # logs
       - velocity-logs:/server/logs
       # forwarding secret
-      - ../secrets/forwarding.secret:/server/forwarding.secret
+      - ../secrets/forwarding.secret:/server/forwarding.secret:ro
+      # geyser key
+      - ../secrets/key.pem:/plugins/floodgate/key.pem:ro
+      - ../secrets/key.pem:/plugins/Geyser-Velocity/key.pem:ro
+      # geyser cache
+      - geyser-cache:/data/plugins/Geyser-Velocity/cache
+      - geyser-cache:/data/plugins/geyserextras/cache
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
 
 volumes:
   velocity-logs:
+  geyser-cache:
+  geyser-extra-cache:
 
 networks:
   infrarust-velocity:

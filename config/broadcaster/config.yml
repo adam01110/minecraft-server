@@ -9,7 +9,7 @@ session:
 
   # This uses checker.geysermc.org for querying if the native ping fails
   # This can be useful in the case of docker networks or routing problems causing the native ping to fail
-  web-query-fallback: false
+  web-query-fallback: true
 
   # Fallback to config values if all other server query methods fail
   config-fallback: false
@@ -49,7 +49,7 @@ slack-webhook:
   # The message to send when the session is expired and needs to be updated
   session-expired-message: |
     <!here> Xbox Session expired, sign in again to update it.
-    
+
     Use the following link to sign in: %s
     Enter the code: %s
 
