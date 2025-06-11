@@ -39,6 +39,7 @@
 /plugins/minecraft/spark/tmp-client/*
 /plugins/minecraft/Chunky/tasks/*
 /plugins/minecraft/KnockbackSync/*.txt
+/plugins/minecraft/CreeperRecover/stats.json
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
 

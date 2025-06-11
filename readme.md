@@ -36,6 +36,7 @@
 - **[ShieldFixes-Server](https://modrinth.com/plugin/shieldfixes-server)** - Fixes shield animation and sound glitch
 - **[Chunky](https://github.com/pop4959/Chunky)** - Pre-generates chunks, quickly and efficiently
 - **[KnockbackSync](https://modrinth.com/plugin/knockbacksync)** - Plugin for fair knockback regardless of ping
+- **[Creeper Recover](https://github.com/HttpRafa/creeper-recover)** - Recovers damage caused by creepers
 
 ### Server Datapacks
 

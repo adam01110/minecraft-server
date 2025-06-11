@@ -1,0 +1,12 @@
+{
+	"prefix": "§8➜ §3C§breeperRecover §8● §7",
+	"no.permission": "§cYou don't have permission to use this command§8.",
+	"blocks.recovered": "§b%d §7blocks recovered§8.",
+	"reloaded": "§7Configuration was §breloaded§8.",
+	"stats.title": "§7Daily§8:",
+	"stats.line.blocks": "   §bBlocks recovered §8» §7%d",
+	"stats.line.explosions": "   §bExplosions recovered §8» §7%d",
+	"help.line.1": "§8/§7recover §bfix §8[§3blocks§8/§3all§8]",
+	"help.line.2": "§8/§7recover §breload",
+	"help.line.3": "§8/§7recover §bstats"
+}
