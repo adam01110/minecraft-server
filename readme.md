@@ -54,7 +54,7 @@
 - **Git** - Version control
 - **Nerd Fonts** - Enhanced terminal display
 - **Just** - Command runner
-- **jq** - JSON processor
+- **Jq** - Json processor
 - **Docker & Docker Compose** - Containerization
 - **Trashy** - Safe file deletion
 
