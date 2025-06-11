@@ -13,8 +13,6 @@ services:
       resources:
         limits:
           memory: 10g
-    secrets:
-      - forwarding-secret
     environment:
       EULA: true
       GUI: false
@@ -39,16 +37,22 @@ services:
       USE_SIMD_FLAGS: true
       # custom flags
       JVM_DD_OPTS: |
-        paper.playerconnection.keepalive=60
+        paper.playerconnection.keepalive=120
         Paper.debugDynamicMissingKeys=false
         disable.watchdog=true
         Paper.skipServerPropertiesComments=true
         Paper.debugInvalidSkullProfiles=false
         paper.debug-sync-loads=false
         debug.entities=false
+        Leaf.enableFMA=true
+        convertLegacySigns=false
+        Paper.skipServerPropertiesComments=true
+        paper.disableGameRuleLimits=true
       # secrets
       REPLACE_ENV_VARIABLES: true
-      CFG_FORWARDING_FILE: /run/secrets/forwarding-secret
+    env_file:
+      # velocity forwarding secret
+      - ../secrets/forwarding-secret.env
     networks:
       # network for velocity to minecraft communication
       - velocity-minecraft
@@ -93,7 +97,3 @@ networks:
     external: true
   valkey:
     external: true
-
-secrets:
-  forwarding-secret:
-    file: ../secrets/forwarding.secret

@@ -1,13 +1,13 @@
 # This is the world defaults configuration file for Paper.
 # As you can see, there's a lot to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or check the docs page.
-# 
+#
 # Configuration options here apply to all worlds, unless you specify overrides inside
 # the world-specific config file inside each world folder.
-# 
+#
 # Docs: https://docs.papermc.io/
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
@@ -17,57 +17,46 @@ anticheat:
   anti-xray:
     enabled: false
     engine-mode: 1
-    hidden-blocks:
-    - copper_ore
-    - deepslate_copper_ore
-    - raw_copper_block
-    - gold_ore
-    - deepslate_gold_ore
-    - iron_ore
-    - deepslate_iron_ore
-    - raw_iron_block
-    - coal_ore
-    - deepslate_coal_ore
-    - lapis_ore
-    - deepslate_lapis_ore
-    - mossy_cobblestone
-    - obsidian
-    - chest
-    - diamond_ore
-    - deepslate_diamond_ore
-    - redstone_ore
-    - deepslate_redstone_ore
-    - clay
-    - emerald_ore
-    - deepslate_emerald_ore
-    - ender_chest
+    hidden-blocks: []
     lava-obscures: false
-    max-block-height: 64
-    replacement-blocks:
-    - stone
-    - oak_planks
-    - deepslate
+    max-block-height: 0
+    replacement-blocks: []
     update-radius: 2
     use-permission: false
 chunks:
   auto-save-interval: default
   delay-chunk-unloads-by: 10s
   entity-per-chunk-save-limit:
-    arrow: -1
-    ender_pearl: -1
-    experience_orb: -1
-    fireball: -1
-    small_fireball: -1
-    snowball: -1
+    arrow: 8
+    ender_pearl: 8
+    experience_orb: 8
+    fireball: 8
+    small_fireball: 8
+    snowball: 8
+    area_effect_cloud: 8
+    breeze_wind_charge: 8
+    dragon_fireball: 3
+    egg: 8
+    experience_bottle: 3
+    eye_of_ender: 8
+    firework_rocket: 8
+    llama_spit: 3
+    splash_potion: 8
+    lingering_potion: 8
+    shulker_bullet: 8
+    spectral_arrow: 16
+    trident: 16
+    wind_charge: 8
+    wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 24
-  prevent-moving-into-unloaded-chunks: false
+  max-auto-save-chunks-per-tick: 8
+  prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
-  fix-climbing-bypassing-cramming-rule: false
-  max-entity-collisions: 8
+  fix-climbing-bypassing-cramming-rule: true
+  max-entity-collisions: 4
   only-players-collide: false
 command-blocks:
   force-follow-perm-level: true
@@ -77,24 +66,33 @@ entities:
     do-collision-entity-lookups: true
     tick: true
   behavior:
-    allow-spider-world-border-climbing: true
+    allow-spider-world-border-climbing: false
     baby-zombie-movement-modifier: 0.5
     cooldown-failed-beehive-releases: true
     disable-chest-cat-detection: false
-    disable-creeper-lingering-effect: false
+    disable-creeper-lingering-effect: true
     disable-player-crits: false
     door-breaking-difficulty:
       husk:
-      - HARD
+        - EASY
+        - NORMAL
+        - HARD
       vindicator:
-      - NORMAL
-      - HARD
+        - EASY
+        - NORMAL
+        - HARD
       zombie:
-      - HARD
+        - EASY
+        - NORMAL
+        - HARD
       zombie_villager:
-      - HARD
+        - EASY
+        - NORMAL
+        - HARD
       zombified_piglin:
-      - HARD
+        - EASY
+        - NORMAL
+        - HARD
     ender-dragons-death-always-places-dragon-egg: false
     experience-merge-max-value: -1
     mobs-can-always-pick-up-loot:
@@ -139,27 +137,27 @@ entities:
       items:
         cobblestone: 300
     count-all-mobs-for-spawning: false
-    creative-arrow-despawn-rate: default
+    creative-arrow-despawn-rate: 40
     despawn-range-shape: ELLIPSOID
     despawn-ranges:
       ambient:
-        hard: default
-        soft: default
+        hard: 72
+        soft: 30
       axolotls:
-        hard: default
-        soft: default
+        hard: 72
+        soft: 30
       creature:
         hard: default
         soft: default
       misc:
-        hard: default
-        soft: default
+        hard: 72
+        soft: 30
       monster:
         hard: default
         soft: default
       underground_water_creature:
-        hard: default
-        soft: default
+        hard: 72
+        soft: 30
       water_ambient:
         hard: default
         soft: default
@@ -175,16 +173,16 @@ entities:
       safe-regen-delete-range: 32
     filter-bad-tile-entity-nbt-from-falling-blocks: true
     filtered-entity-tag-nbt-paths:
-    - Pos
-    - Motion
-    - SleepingX
-    - SleepingY
-    - SleepingZ
+      - Pos
+      - Motion
+      - SleepingX
+      - SleepingY
+      - SleepingZ
     iron-golems-can-spawn-in-air: false
     monster-spawn-max-light-level: default
-    non-player-arrow-despawn-rate: default
+    non-player-arrow-despawn-rate: 40
     per-player-mob-spawns: true
-    scan-for-legacy-ender-dragon: true
+    scan-for-legacy-ender-dragon: false
     skeleton-horse-thunder-spawn-chance: default
     slime-spawn-height:
       slime-chunk:
@@ -250,25 +248,25 @@ environment:
   max-block-ticks: 65536
   max-fluid-ticks: 65536
   nether-ceiling-void-damage-height: disabled
-  optimize-explosions: false
+  optimize-explosions: true
   portal-create-radius: 16
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
   treasure-maps:
-    enabled: true
+    enabled: false
     find-already-discovered:
-      loot-tables: default
+      loot-tables: false
       villager-trade: false
   void-damage-amount: 4.0
   void-damage-min-build-height-offset: -64.0
   water-over-lava-flow-speed: 5
 feature-seeds:
-  generate-random-seeds-for-all: false
+  generate-random-seeds-for-all: true
 fishing-time-range:
   maximum: 600
   minimum: 100
 fixes:
-  disable-unloaded-chunk-enderpearl-exploit: false
+  disable-unloaded-chunk-enderpearl-exploit: true
   falling-block-height-nerf: disabled
   fix-items-merging-through-walls: false
   prevent-tnt-from-moving-in-water: false
@@ -276,7 +274,7 @@ fixes:
   tnt-entity-height-nerf: disabled
 hopper:
   cooldown-when-full: true
-  disable-move-event: false
+  disable-move-event: true
   ignore-occluding-blocks: false
 lootables:
   auto-replenish: false
@@ -298,15 +296,15 @@ max-growth-height:
   reeds: 3
 misc:
   alternate-current-update-order: HORIZONTAL_FIRST_OUTWARD
-  disable-end-credits: false
+  disable-end-credits: true
   disable-relative-projectile-velocity: false
   disable-sprint-interruption-on-attack: false
   legacy-ender-pearl-behavior: false
   max-leash-distance: default
-  redstone-implementation: VANILLA
+  redstone-implementation: ALTERNATE_CURRENT
   shield-blocking-delay: 5
   show-sign-click-command-failure-msgs-to-player: false
-  update-pathfinding-on-block-update: true
+  update-pathfinding-on-block-update: false
 scoreboards:
   allow-non-player-entities-on-scoreboards: true
   use-vanilla-world-scoreboard-name-coloring: false
@@ -318,8 +316,8 @@ tick-rates:
       validatenearbypoi: -1
   container-update: 1
   dry-farmland: 1
-  grass-spread: 1
-  mob-spawner: 1
+  grass-spread: 4
+  mob-spawner: 2
   sensor:
     villager:
       secondarypoisensor: 40

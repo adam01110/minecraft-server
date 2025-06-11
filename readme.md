@@ -29,6 +29,8 @@
 ### Server Plugins (Paper/Spigot)
 
 - **[Spark](https://spark.lucko.me/)** - Performance profiler and monitoring
+- **[OkTreasures](https://hangar.papermc.io/Kyle/OkTreasures)** - Alternative buried treasure search
+- **[Otherside](https://hangar.papermc.io/Kyle/Otherside)** - Plugin to fix portal-based farms
 - More plugins coming soon...
 
 ### Proxy Plugins (Velocity)

@@ -45,4 +45,8 @@ setup:
   docker network create mariadb
   docker network create valkey
   scripts/download-leaf.sh
-  openssl rand -base64 9 | tr -dc 'a-zA-Z0-9' | head -c12 > secrets/forwarding.secret
+  openssl rand -base64 9 | tr -dc 'a-zA-Z0-9' | head -c12 | tee secrets/forwarding.secret | sed 's/^/PAPER_VELOCITY_SECRET: /' > secrets/forwarding-secret.env
+
+# update
+update:
+  scripts/download-leaf.sh

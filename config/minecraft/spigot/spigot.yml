@@ -19,7 +19,7 @@ messages:
 advancements:
   disable-saving: false
   disabled:
-  - minecraft:story/disabled
+    - minecraft:story/disabled
 settings:
   bungeecord: false
   save-user-cache-on-stop-only: false
@@ -46,7 +46,7 @@ settings:
   debug: false
 world-settings:
   default:
-    below-zero-generation-in-existing-chunks: true
+    below-zero-generation-in-existing-chunks: false
     view-distance: default
     simulation-distance: default
     thunder-chance: 100000
@@ -63,7 +63,7 @@ world-settings:
     wither-spawn-sound-radius: 0
     end-portal-sound-radius: 0
     hanging-tick-frequency: 100
-    unload-frozen-chunks: false
+    unload-frozen-chunks: true
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -111,7 +111,7 @@ world-settings:
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true
-      tick-inactive-villagers: true
+      tick-inactive-villagers: false
       ignore-spectators: false
     entity-tracking-range:
       players: 128
@@ -170,12 +170,11 @@ commands:
   tab-complete: 0
   send-namespaced: true
   log: true
-  spam-exclusions:
-  - /skill
+  spam-exclusions: []
   silent-commandblock-console: false
   replace-commands:
-  - setblock
-  - summon
-  - testforblock
-  - tellraw
+    - setblock
+    - summon
+    - testforblock
+    - tellraw
   enable-spam-exclusions: false

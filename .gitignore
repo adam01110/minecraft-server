@@ -4,7 +4,7 @@
 
 # dont put plugins in repo
 # and can get us in trouble because of paid plugins
-/plugins/*.jar
+/plugins/*/*.jar
 
 # dont put plugin stuff in repo
 /dev/plugins/*
@@ -20,13 +20,9 @@
 /dev/datapacks/*
 
 # dont put world files in repo
-/worlds/world/*
-/worlds/nether/*
-/worlds/end/*
-# and the dev worlds
-/dev/worlds/world/*
-/dev/worlds/nether/*
-/dev/worlds/end/*
+*/worlds/world/*
+*/worlds/nether/*
+*/worlds/end/*
 
 # dont put secrets in repo
 # these are for the minecraft container
@@ -53,8 +49,7 @@
 !/worlds/*/gale-world.yml
 
 # keep default dev configs
-!/dev/plugins/minecraft/bStats
+!/dev/plugins/*/bStats
 !/dev/plugins/minecraft/spark
-!/dev/plugins/velocity/bStats
 # keep default dev configs
 !/dev/datapacks/bukkit

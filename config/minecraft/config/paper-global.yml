@@ -21,7 +21,7 @@ anticheat:
         dont-obfuscate:
           - minecraft:lodestone_tracker
         sanitize-count: true
-      enable-item-obfuscation: false
+      enable-item-obfuscation: true
       model-overrides:
         minecraft:elytra:
           also-obfuscate: []
@@ -87,7 +87,7 @@ misc:
   compression-level: default
   fix-entity-position-desync: true
   load-permissions-yml-before-plugins: true
-  max-joins-per-tick: 5
+  max-joins-per-tick: 4
   region-file-cache-size: 256
   strict-advancement-dimension-check: false
   use-alternative-luck-formula: false
@@ -103,6 +103,10 @@ packet-limiter:
       action: DROP
       interval: 4.0
       max-packet-rate: 5.0
+    ServerboundCommandSuggestionPacket:
+      action: DROP
+      interval: 1.0
+      max-packet-rate: 15.0
 player-auto-save:
   max-per-tick: -1
   rate: -1
@@ -113,7 +117,7 @@ proxies:
   velocity:
     enabled: true
     online-mode: true
-    secret: "${CFG_FORWARDING_SECRET}"
+    secret: ""
 scoreboards:
   save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false

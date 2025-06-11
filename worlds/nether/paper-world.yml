@@ -20,5 +20,5 @@ anticheat:
       - netherrack
       - soul_sand
       - soul_soil
-    update-radius: 6
+    update-radius: 2
     use-permission: false

@@ -62,7 +62,7 @@ services:
       MEMORY: 512m
     volumes:
       # config
-      - ../config/velocity/config.yml:/config/config.yml
+      - ../config/velocity/velocity.toml:/config/velocity.toml
       # lang
       - ../config/velocity/lang:/server/lang
       # logs
