@@ -122,8 +122,6 @@ performance:
   reduce-chunk-source-updates:
     # Reduces chunk source updates on inter-chunk player moves.
     enabled: false
-  preload-mob-spawning-position:
-    enabled: false
   optimized-powered-rails: false
   # Whether to optimize player movement processing by skipping unnecessary edge checks and avoiding redundant view distance updates.
   optimize-player-movement: true

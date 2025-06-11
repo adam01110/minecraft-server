@@ -31,11 +31,21 @@
 - **[Spark](https://spark.lucko.me/)** - Performance profiler and monitoring
 - **[OkTreasures](https://hangar.papermc.io/Kyle/OkTreasures)** - Alternative buried treasure search
 - **[Otherside](https://hangar.papermc.io/Kyle/Otherside)** - Plugin to fix portal-based farms
-- More plugins coming soon...
+- **[PacketEvents](https://github.com/retrooper/packetevents)** - Library for Minecraft packet manipulation
+- **[SignedVelocity](https://github.com/4drian3d/SignedVelocity)** - Cancel or modify messages from Velocity without problems
+- **[ShieldFixes-Server](https://modrinth.com/plugin/shieldfixes-server)** - Fixes shield animation and sound glitch
+- **[Chunky](https://modrinth.com/plugin/chunky)** - Pre-generates chunks, quickly and efficiently
+
+### Server Datapacks
+
+- **[Blooming Biosphere](https://modrinth.com/datapack/blooming-biosphere)** - An overworld biome overhaul
+- **[Custom Biome Saplings](https://modrinth.com/datapack/terralith-biome-saplings)** - Allows Blooming Biosphere trees to be regrown
 
 ### Proxy Plugins (Velocity)
 
-- More plugins coming soon...
+- **[PacketEvents](https://github.com/retrooper/packetevents)** - Library for Minecraft packet manipulation
+- **[SignedVelocity](https://github.com/4drian3d/SignedVelocity)** - Cancel or modify messages from Velocity without problems
+- **[ViaVersion](https://viaversion.com/)** -
 
 ## <img src="assets/icons/rocket.svg" width="16" height="16"> Development Setup
 

@@ -65,7 +65,7 @@ services:
       # jar
       - ../../jar/leaf.jar:/custom/leaf.jar:ro
       # plugins
-      - ../plugins/minecraft:/data/plugins
+      - ../plugins/minecraft:/plugins
       # worlds
       - ../worlds/world:/data/world
       - ../worlds/nether:/data/world_nether
