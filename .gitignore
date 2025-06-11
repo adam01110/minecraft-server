@@ -38,6 +38,7 @@
 ## plugin stuff that should not be put in repo
 /plugins/minecraft/spark/tmp-client/*
 /plugins/minecraft/Chunky/tasks/*
+/plugins/minecraft/KnockbackSync/*.txt
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
 
