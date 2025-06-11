@@ -33,6 +33,8 @@ services:
     volumes:
       # config
       - ../config/velocity/velocity.toml:/config/velocity.toml
+      # plugins
+      - ../plugins/velocity:/plugins
       # lang
       - ../config/velocity/lang:/server/lang
       # logs

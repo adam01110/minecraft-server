@@ -9,7 +9,7 @@ VOLUMES=(
 DIRECTORIES=(
   "datapacks"
   "plugins/minecraft"
-  "plugins/minecraft"
+  "plugins/velocity"
   "worlds/world"
   "worlds/nether"
   "worlds/end"
