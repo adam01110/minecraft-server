@@ -62,7 +62,7 @@ item-validation:
     page: 16384
     title: 8192
   book-size:
-    page-max: 2560
+    page-max: 1024
     total-multiplier: 0.98
   display-name: 8192
   lore-line: 8192
