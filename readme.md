@@ -1,10 +1,14 @@
-## <img src="assets/icons/info.svg" width="16" height="16"> Server Information
+<div align="center">
+  <img src="assets/logo.png" width="128" height="128" alt="logo">
+</div>
 
-- **Version:** 1.21.4/1.21.5 (TBD)
+## <img src="assets/icons/info.svg" width="16" height="16" alt="clipboard"> Server Information
+
+- **Version:** 1.21.5 (will update to .6 as soon as possible)
 - **Platforms:** Java Edition & Bedrock Edition
 - **Discord:** [Join our community](https://discord.gg/zV7FcdJRgj)
 
-## <img src="assets/icons/tools.svg" width="16" height="16"> Tech Stack
+## <img src="assets/icons/tools.svg" width="16" height="16" alt="tools"> Tech Stack
 
 ### Infrastructure
 
@@ -24,7 +28,7 @@
 | **MariaDB** | Primary database server | [Website](https://mariadb.org/) • [GitHub](https://github.com/MariaDB/server) |
 | **Valkey**  | In-memory data store    | [Website](https://valkey.io/) • [GitHub](https://github.com/valkey-io/valkey) |
 
-## <img src="assets/icons/plugin.svg" width="16" height="16"> Plugins
+## <img src="assets/icons/plugin.svg" width="16" height="16" alt="plug"> Plugins
 
 ### Server Plugins (Paper/Spigot)
 
@@ -38,6 +42,10 @@
 - **[KnockbackSync](https://modrinth.com/plugin/knockbacksync)** - Plugin for fair knockback regardless of ping
 - **[Creeper Recover](https://github.com/HttpRafa/creeper-recover)** - Recovers damage caused by creepers
 - **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
+- **[CMI](https://www.zrips.net/cmi/)** - A comprehensive server management plugin
+- **[CMILib](https://www.zrips.net/cmilib/)** - Library for core functionality and plugin support of CMI
+- **[PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI)** - allows information from plugins be shown
+- **[Teak's Tweaks](https://github.com/teakivy/teaks-tweaks)** - toggleable Tweaks & Features including Vanilla Tweaks as a plugin
 
 ### Server Datapacks
 
@@ -51,8 +59,9 @@
 - **[ViaVersion](https://viaversion.com/)** - Allow newer clients to connect to older servers
 - **[Geysermc](https://geysermc.org/)** - A bridge/proxy allowing bedrock to connect to java
 - **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
+- **[CMIV](https://www.zrips.net/cmiv/)** - Velocity network plugin for cmi
 
-## <img src="assets/icons/rocket.svg" width="16" height="16"> Development Setup
+## <img src="assets/icons/rocket.svg" width="16" height="16" alt="rocket"> Development Setup
 
 ### Required Tools
 
@@ -68,7 +77,7 @@
 - **Visual Studio Code** (fork, or any preferred editor)
 - **Lazydocker** - Docker container management
 
-## <img src="assets/icons/handshake.svg" width="16" height="16"> Contributing
+## <img src="assets/icons/handshake.svg" width="16" height="16" alt="handshake"> Contributing
 
 We welcome contributions! Please ensure you have the required tools installed before getting started.
 

@@ -8,6 +8,7 @@
 # Configuration options here apply to all worlds, unless you specify overrides inside
 # the world-specific config file inside each world folder.
 # 
+# File Reference: https://docs.papermc.io/paper/reference/world-configuration/
 # Docs: https://docs.papermc.io/
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
@@ -95,7 +96,7 @@ entities:
       - HARD
       zombified_piglin:
       - HARD
-    ender-dragons-death-always-places-dragon-egg: false
+    ender-dragons-death-always-places-dragon-egg: true
     experience-merge-max-value: -1
     mobs-can-always-pick-up-loot:
       skeletons: false

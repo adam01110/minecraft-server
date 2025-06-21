@@ -13,13 +13,15 @@ services:
       resources:
         limits:
           memory: 10g
+    secrets:
+      - seed-obfuscation-key
+      - cmi-database-username
+      - cmi-database-password
     environment:
       EULA: true
       GUI: false
-      # 1.21.(4/5) TBD
-      # using 1.21.5 for now
-      # TODO: version decision
-      VERSION: 1.21.4
+      # TODO: update to .6 as soon as possible
+      VERSION: 1.21.5
       # leaf server jar
       TYPE: custom
       CUSTOM_SERVER: /custom/leaf.jar
@@ -50,6 +52,9 @@ services:
         paper.disableGameRuleLimits=true
       # secrets
       REPLACE_ENV_VARIABLES: true
+      CFG_SEED_OBFUSCATION_KEY_FILE: /run/secrets/seed-obfuscation-key
+      CFG_CMI_DATABASE_USERNAME_FILE: /run/secrets/cmi-database-username
+      CFG_CMI_DATABASE_PASSWORD_FILE: /run/secrets/cmi-database-password
     env_file:
       # velocity forwarding secret
       - ../secrets/forwarding-secret.env
@@ -84,6 +89,8 @@ services:
       - ../config/minecraft/server/server.properties:/data/server.properties
       # geyser key
       - ../secrets/key.pem:/data/plugins/floodgate/key.pem:ro
+      # cmi key
+      - ../secrets/security.key:/data/plugins/CMI/security.key:ro
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
@@ -99,3 +106,11 @@ networks:
     external: true
   valkey:
     external: true
+
+secrets:
+  seed-obfuscation-key:
+    file: ../secrets/seed-obfuscation-key.txt
+  cmi-database-username:
+    file: ../secrets/cmi-database-username.txt
+  cmi-database-password:
+    file: ../secrets/cmi-database-password.txt

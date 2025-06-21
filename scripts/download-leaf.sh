@@ -2,25 +2,36 @@
 
 # configuration
 REPO="Winds-Studio/Leaf"
+VERSION="${VERSION:-1.21.5}"
+
+# paths and files
 JAR_DIR="$(dirname "$(cd "$(dirname "$0")" && pwd)")/jar"
 VERSION_FILE="${JAR_DIR}/leaf-version.txt"
 JAR_FILE="${JAR_DIR}/leaf.jar"
-TMP_JSON="${JAR_DIR}/latest-release.json"
+TMP_JSON="${JAR_DIR}/tag-release.json"
 
-# fetch latest release json
-curl -s "https://api.github.com/repos/${REPO}/releases/latest" -o "${TMP_JSON}"
+# fetch tag release json
+curl -s "https://api.github.com/repos/${REPO}/releases/tags/ver-${VERSION}" -o "${TMP_JSON}"
+
+# check if tag exists
+if ! jq -e . >/dev/null 2>&1 <"${TMP_JSON}"; then
+  echo "󰅙 Failed to fetch release info for tag ver-${VERSION}"
+  rm -f "${TMP_JSON}"
+  exit 1
+fi
 
 # parse asset name, url & expected sha256
 ASSET_NAME=$(jq -r '.assets[] | select(.name|test("^leaf-.*\\.jar$")) | .name' "${TMP_JSON}")
 JAR_URL=$(jq -r --arg name "${ASSET_NAME}" '.assets[] | select(.name==$name) | .browser_download_url' "${TMP_JSON}")
 SHA256_EXPECTED=$(jq -r '.body' "${TMP_JSON}" | grep -A1 "SHA256" | grep -oE '[a-f0-9]{64}')
 if [[ -z "${ASSET_NAME}" || -z "${JAR_URL}" || -z "${SHA256_EXPECTED}" ]]; then
-  echo "󰅙 Failed to parse release info"
+  echo "󰅙 Failed to parse release info for tag ver-${VERSION}"
   rm -f "${TMP_JSON}"
   exit 1
 fi
 
-echo "󰏔 Latest asset: ${ASSET_NAME}"
+echo "󰏔 Tag: ver-${VERSION}"
+echo "󰏔 Asset: ${ASSET_NAME}"
 echo "󰕥 Expected SHA256: ${SHA256_EXPECTED}"
 
 # compare with last stored version (no .jar)

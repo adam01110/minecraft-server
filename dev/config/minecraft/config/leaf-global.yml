@@ -35,7 +35,6 @@ async:
     async-search-block: true
     async-search-entity: true
     queue-size: 0
-    threshold: 0
   # Make PlayerData saving asynchronously.
   async-playerdata-save:
     enabled: false
@@ -123,6 +122,7 @@ performance:
     # Reduces chunk source updates on inter-chunk player moves.
     enabled: false
   optimized-powered-rails: false
+  optimise-random-tick: false
   # Whether to optimize player movement processing by skipping unnecessary edge checks and avoiding redundant view distance updates.
   optimize-player-movement: true
   # Whether to only tick / update items in main hand and offhand instead of the entire inventory.
@@ -153,6 +153,12 @@ performance:
     # Use direct random implementation instead of delegating to Java's RandomGenerator.
     # This may improve performance but potentially changes RNG behavior.
     use-direct-implementation: false
+  fast-biome-manager-seed-obfuscation:
+    # **EXPERMIENTAL FEATURE**
+    # Replace vanilla SHA-256 seed obfuscation in BiomeManager with XXHash.
+    enabled: false
+    # Seed obfuscation key for XXHash.
+    seed-obfuscation-key: 5880563285794528639
   # Whether to cache the isEyeInFluid method to improve performance and reduce memory usage.
   cache-eye-fluid-status: false
   # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
@@ -341,18 +347,6 @@ misc:
   remove-spigot-check-bungee-config: true
   # Enable to prevent console spam.
   remove-change-non-editable-sign-warning: false
-  # Linear is a region file format that uses ZSTD compression instead of
-  # ZLIB.
-  # This format saves about 50% of disk space.
-  # Read Documentation before using: https://github.com/xymb-endcrystalme/LinearRegionFileFormatTools
-  # Disclaimer: This is an experimental feature, there is potential risk to lose chunk data.
-  # So backup your server before switching to Linear.
-  region-format-settings:
-    # Available region formats: MCA, LINEAR
-    region-format: MCA
-    linear-compress-level: 1
-    throw-on-unknown-extension-detected: false
-    flush-interval-seconds: 5
   # This section contains lag compensation features,
   # which could ensure basic playing experience during a lag.
   lag-compensation:

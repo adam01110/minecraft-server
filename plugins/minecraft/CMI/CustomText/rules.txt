@@ -1,0 +1,20 @@
+<AutoPage>
+&6Player Rules:
+&61. &eNo Griefing
+&62. &eNo Spamming
+&63. &eNo Advertising
+&64. &eNo Trolling
+&65. &eNo Banned Items
+&66. &eNo Asking for OP, Ranks, or Items
+&67. &eRespect all Players
+&68. &eObey Staff There the Law
+&69. &eNo Racist or Sexist Remarks.
+&610. &eNo Mods/Hacks
+&611. &eNo Full Caps Messages
+<NextPage>
+&6Mod/Admin Rules:
+&61. Be Responsible with the privileges you are given as an Admin
+&62. Do not spawn blocks or items for other players
+&63. When Trading, only buy and sell legit items
+&64. Only help build for other players using legit items and blocks
+&65. No Power Abuse

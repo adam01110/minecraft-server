@@ -40,6 +40,7 @@
 /plugins/minecraft/Chunky/tasks/*
 /plugins/minecraft/KnockbackSync/*.txt
 /plugins/minecraft/CreeperRecover/stats.json
+/plugins/minecraft/PlaceholderAPI/expansions/*
 /plugins/velocity/geyserextras/optionalpacks/*.mcpack
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
@@ -47,6 +48,9 @@
 ### keep ###
 # folder without contents on repo
 !.gitkeep
+
+# keep bukkit datapack thing
+!/datapacks/bukkit
 
 # keep per world configuration files
 !/worlds/*/paper-world.yml

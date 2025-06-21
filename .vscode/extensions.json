@@ -1,3 +1,11 @@
 {
-  "recommendations": ["Gruntfuggly.todo-tree"]
+  "recommendations": [
+    "Gruntfuggly.todo-tree",
+    "naumovs.color-highlight",
+    "Nobuwu.mc-color",
+    "redhat.vscode-yaml",
+    "Syler.ignore",
+    "skellock.just",
+    "tamasfe.even-better-toml"
+  ]
 }

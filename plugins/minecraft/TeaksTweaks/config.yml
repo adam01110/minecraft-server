@@ -1,0 +1,1118 @@
+#    ████████╗███████╗░█████╗░██╗░░██╗░██████╗  ████████╗░██╗░░░░░░░██╗███████╗░█████╗░██╗░░██╗░██████╗
+#    ╚══██╔══╝██╔════╝██╔══██╗██║░██╔╝██╔════╝  ╚══██╔══╝░██║░░██╗░░██║██╔════╝██╔══██╗██║░██╔╝██╔════╝
+#    ░░░██║░░░█████╗░░███████║█████═╝░╚█████╗░  ░░░██║░░░░╚██╗████╗██╔╝█████╗░░███████║█████═╝░╚█████╗░
+#    ░░░██║░░░██╔══╝░░██╔══██║██╔═██╗░░╚═══██╗  ░░░██║░░░░░████╔═████║░██╔══╝░░██╔══██║██╔═██╗░░╚═══██╗
+#    ░░░██║░░░███████╗██║░░██║██║░╚██╗██████╔╝  ░░░██║░░░░░╚██╔╝░╚██╔╝░███████╗██║░░██║██║░╚██╗██████╔╝
+#    ░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░  ░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░
+
+# NOTE: This project is not ran by the Vanilla Tweaks Team.
+# For support, please use my Discord: https://dsc.gg/teakivy or the project's GitHub: https://github.com/teakivy/teaks-tweaks
+
+# Be sure to check the data folder for more customizability!
+
+# Plugin Settings
+settings:
+  # Alert on new version
+  # If enabled, the plugin will alert you when a new version is available.
+  alert-on-new-version: false
+
+  # Disable Update Checker
+  # If enabled, the plugin will not check for updates.
+  # Useful if you use a server with limited internet access.
+  disable-update-checker: true
+
+  # Mechanics Command
+  # If enabled, players will be able to use the /mechanics command to view a list of all enabled tweaks.
+  # Commands:
+  # /mechanics (Permission: teakstweaks.command.mechanics)
+  mechanics-command: false
+
+  # Send Log in Paste
+  # If enabled, the plugin will send the server log by default when using /teakstweaks paste.
+  # If disabled, the log can still be sent by using /teakstweaks paste true.
+  # Commands:
+  # /teakstweaks paste (Permission: teakstweaks.command.teakstweaks.paste)
+  send-log-in-paste: false
+
+  # Language
+  # Change the language of the plugin
+  # Supported languages:
+  #  - English (en)
+  #  - German (de)
+  #  - French (fr)
+  #  - Russian (ru)
+  #  - Finnish (fl)
+  #  - Polish (pl)
+  #  - Dutch (nl)
+  # If you would like to translate the plugin into your language,
+  # please contact me on discord! @teakivy (https://discord.gg/wfP4SkZx6s)
+  language: "en"
+
+# Packs
+packs:
+  # Enable a pack by changing 'enabled: false' to 'enabled: true'
+  # If a pack is not enabled, none of its effects will happen.
+
+  # AFK Display
+  # Gray out a players name that is not moving for 5 minutes.
+  #
+  # Commands:
+  # /afk (Permission: teakstweaks.command.afk)
+  # /afk uninstall (Permission: teakstweaks.command.afk.uninstall)
+  afk-display:
+    enabled: false
+    # Whether or not to display [AFK] before an AFK players name
+    display-badge: true
+    # Badge to show when afk
+    badge: "<gray>[AFK]"
+    # Color to change the player's name to when they are AFK (or 'none' to not change the color)
+    name-color: "gray"
+    # How long a player needs to be still before getting AFK'
+    afk-after: 5
+    # How long (in minutes) a player needs to be AFK before they get kicked from the server
+    # Use '-1' to never kick, use '0' to kick immediately, use '60' to kick after 1 hour, etc.
+    kick-after: -1
+    # Message to show when AFK Kicked
+    kick-message: "You have been kicked for AFK!"
+    # Whether or not users can run '/afk' to mark themselves as AFK
+    allow-afk-command: true
+    # Message settings
+    message:
+      # Whether or not to display the AFK message to the player afk
+      display-to-self: true
+      # Whether or not to display the AFK message to everyone other than the afk player
+      display-to-everyone: false
+      # Whether or not to display the AFK message to Server Console
+      display-to-console: true
+
+  # Always Drop
+  # Allows you to set blocks that will always drop when broken, regardless of the tool or enchantments used.
+  always-drop:
+    enabled: false
+    # Blocks that will always drop when broken
+    blocks:
+      - "ender_chest"
+      - "glass"
+      - "tinted_glass"
+      - "white_stained_glass"
+      - "light_gray_stained_glass"
+      - "gray_stained_glass"
+      - "black_stained_glass"
+      - "brown_stained_glass"
+      - "red_stained_glass"
+      - "orange_stained_glass"
+      - "yellow_stained_glass"
+      - "lime_stained_glass"
+      - "green_stained_glass"
+      - "cyan_stained_glass"
+      - "light_blue_stained_glass"
+      - "blue_stained_glass"
+      - "purple_stained_glass"
+      - "magenta_stained_glass"
+      - "pink_stained_glass"
+      - "glass_pane"
+      - "white_stained_glass_pane"
+      - "light_gray_stained_glass_pane"
+      - "gray_stained_glass_pane"
+      - "black_stained_glass_pane"
+      - "brown_stained_glass_pane"
+      - "red_stained_glass_pane"
+      - "orange_stained_glass_pane"
+      - "yellow_stained_glass_pane"
+      - "lime_stained_glass_pane"
+      - "green_stained_glass_pane"
+      - "cyan_stained_glass_pane"
+      - "light_blue_stained_glass_pane"
+      - "blue_stained_glass_pane"
+      - "purple_stained_glass_pane"
+      - "magenta_stained_glass_pane"
+      - "pink_stained_glass_pane"
+
+  # Anti Creeper Grief
+  # Prevents creepers from blowing up, blocks and players do not take damage.
+  anti-creeper-grief:
+    enabled: false
+    do-block-damage: false
+    do-entity-damage: false
+
+  # Anti Enderman Grief
+  # Prevents endermen from picking up blocks.
+  anti-enderman-grief:
+    enabled: false
+
+  # Anti Ghast Grief
+  # Prevents ghasts from blowing up blocks.
+  anti-ghast-grief:
+    enabled: false
+
+  # Armored Elytra
+  # Drop an elytra and a chestplate above an anvil to merge them into one item. Drop the item above a grindstone to separate them again.
+  # Enchantments are kept safely between merging and separating. Burning a netherite armored elytra will separate the items.
+  #
+  # Permissions:
+  # teakstweaks.armored-elytra.create
+  # teakstweaks.armored-elytra.separate
+  armored-elytra:
+    enabled: false
+
+  # Back
+  # Enter '/back' to go back to the last location you teleported from. (using Homes, Spawn, or TPA)
+  # You can also allow players to teleport back to their death location if that's enabled.
+  #
+  # Commands:
+  # /back (Permission: teakstweaks.command.back)
+  #
+  # Permissions:
+  # teakstweaks.back.death
+  # teakstweaks.back.teleport
+  back:
+    enabled: false
+    # Enter the number of seconds required to wait between uses of the back command
+    teleport-cooldown: 0
+    # Enter the number of seconds required to wait before teleporting
+    teleport-delay: 0
+
+  # Bat Membranes
+  # Disable Phantoms to get membranes from Bats instead.
+  bat-membranes:
+    enabled: false
+
+  # Cauldron Concrete
+  # Right click a water cauldron with concrete powder to harden it.
+  #
+  # Permissions:
+  # teakstweaks.cauldron-concrete
+  cauldron-concrete:
+    enabled: false
+    # Whether or not hardening takes a water level from the cauldron
+    drops-water-level: true
+
+  # Cauldron Mud
+  # Right click a water cauldron with dirt to turn it into mud.
+  #
+  # Permissions:
+  # teakstweaks.cauldron-mud
+  cauldron-mud:
+    enabled: false
+    # Whether or not converting the mud takes a water level from the cauldron
+    drops-water-level: true
+
+  # Chat Colors
+  # Use Chat Colors to make your messages, signs, and items look better (Using '&' for color codes)
+  #
+  # Permissions:
+  # teakstweaks.chat-colors.chat
+  # teakstweaks.chat-colors.anvil
+  # teakstweaks.chat-colors.signs
+  chat-colors:
+    enabled: false
+
+  # Chunk Loaders
+  # Drop a Nether Star above a Lodestone to create a chunk loader (AKA a Loadstone) which keeps the chunk it's in loaded until it is broken.
+  #
+  # Permissions:
+  # teakstweaks.chunk-loaders
+  chunk-loaders:
+    enabled: false
+    # Whether or not the chunk loader will show particles
+    show-particles: true
+    # The item it takes to load a chunk
+    cost: "NETHER_STAR"
+
+  # Classic Fishing Loot
+  # Reverts the fishing loot back to its pre-1.16 loot table.
+  #
+  # Permissions:
+  # teakstweaks.classic-fishing-loot
+  classic-fishing-loot:
+    enabled: false
+
+  # Collectible Budding Amethyst
+  # Allows you to collect budding amethyst blocks to get the block itself.
+  collectible-budding-amethyst:
+    enabled: false
+    # Whether or not silk touch is required to collect budding amethyst blocks
+    require-silk-touch: true
+
+  # Confetti Creepers
+  # There is a chance each creeper will explode into confetti and do no damage to blocks.
+  confetti-creepers:
+    enabled: false
+    # The % Chance a creeper will be a confetti creeper
+    confetti-chance: 100
+    # The % of damage to reduce from explosion damage on entities (players, mobs, etc)
+    entity-damage-reduction: 50
+    # Whether or not to do damage to blocks nearby
+    do-block-damage: false
+
+  # Coords HUD
+  # Adds information to your actionbar. XYZ Coords and a 24hr clock.
+  #
+  # Commands:
+  # /coordshud (Permission: teakstweaks.command.coordshud)
+  coords-hud:
+    enabled: false
+    # Whether or not Coordinates Hud will be automatically enabled on join
+    auto-enable: false
+    # Whether or not to force users to use Coords HUD
+    force-enable: false
+    # What world (folder name) to get the world time from, if none exists it will take the first loaded world
+    time-world: "world"
+    # Whether or not to use player position instead of block position
+    # This may have unwanted effects on negative values.
+    use-player-position: false
+    # The format of the coords hud message.
+    # Available variables:
+    # <x> - The X coordinate
+    # <y> - The Y coordinate
+    # <z> - The Z coordinate
+    # <direction> - The direction the player is facing (N, E, S, W)
+    # <world_time> - The current world time in 24hr format (HH:mm)
+    hud-message: "<gold>XYZ: <white><x> <y> <z>  <gold><direction>      <world_time>"
+
+  # Count Mob Deaths
+  # Adds the ability to count the mob deaths during the time the system has started.
+  count-mob-deaths:
+    enabled: false
+
+  # Custom Nether Portals
+  # Ignite nether portals of any size or shape you like, or using crying obsidian in the portal frame if enabled.
+  custom-nether-portals:
+    enabled: false
+    # Whether or not to allow crying obsidian to be used in portal making
+    allow-crying-obsidian: true
+    # How big a portal has to be to be created (Default: 6 - 2x3)
+    minimum-portal-size: 6
+    # How wide a portal can be (Default: 23)
+    # WARNING: Creating Larger portals may cause messy breaking patterns due to the base Minecraft Game's Limitations
+    max-portal-width: 23
+    # How tall a portal can be (Default: 23)
+    # WARNING: Creating Larger portals may cause messy breaking patterns due to the base Minecraft Game's Limitations
+    max-portal-height: 23
+
+  # Dirt to Grass
+  # Convert dirt to grass by right-clicking a dirt block with seeds
+  #
+  # Permissions:
+  # teakstweaks.dirt-to-grass
+  dirt-to-grass:
+    enabled: false
+    # Chance to convert dirt to grass based on the seed type
+    wheat-seeds-chance: 0.3
+    melon-seeds-chance: 0.03
+    pumpkin-seeds-chance: 0.03
+    beetroot-seeds-chance: 0.03
+
+  # Double Shulker Shells
+  # Makes all shulkers drop 2 shells.
+  double-shulker-shells:
+    enabled: true
+
+  # Dragon Drops
+  # Makes the Ender Dragon drop a dragon egg and elytra on death.
+  dragon-drops:
+    enabled: false
+    drop-elytra: true
+    drop-egg: true
+
+  # Durability Ping
+  # Get notified when you damage an item with 10% less durability.
+  # Fully Customizable per-player with '/durabilityping config'
+  #
+  # Commands:
+  # /durabilityping (Permission: teakstweaks.command.durabilityping)
+  # /durabilityping preview (Permission: teakstweaks.command.durabilityping.preview)
+  # /durabilityping config (Permission: teakstweaks.command.durabilityping.set)
+  # /durabilityping set (Permission: teakstweaks.command.durabilityping.set)
+  #
+  # Permissions:
+  # teakstweaks.durability-ping
+  durability-ping:
+    enabled: false
+    # What percent to start pinging the player
+    ping-at-percent: 10
+    # How many seconds to wait between pings
+    ping-cooldown: 45
+    # Default settings for everyone (customizable per-player)
+    default-settings:
+      # Ping for items held in your inventory
+      ping-for-hand-items: true
+      # Ping for armor items
+      ping-for-armor-items: true
+      # Whether or not to play a sound when pinging
+      ping-with-sound: true
+      # Where to display durability pings (default: subtitle) [hidden, subtitle, title, chat, actionbar]
+      display: "subtitle"
+
+  # Elevators
+  # Drop an ender pearl above a wool block to make it into an elevator.
+  # Jump on it to warp onto an elevator of the same color directly above.
+  # Crouch on it to warp onto one directly above.
+  #
+  # Permissions:
+  # teakstweaks.elevator.create
+  # teakstweaks.elevator.use
+  elevators:
+    enabled: false
+    # What Item/Block needs to be dropped to create an elevator
+    activator: "ENDER_PEARL"
+    # Whether or not elevators can only teleport between elevators of the same type/block
+    require-same-type: true
+    # Whether or not to play the teleport sound upon using the elevator
+    play-sound: true
+    # What blocks can be used to create an elevator
+    elevator-blocks:
+      - "WHITE_WOOL"
+      - "ORANGE_WOOL"
+      - "MAGENTA_WOOL"
+      - "LIGHT_BLUE_WOOL"
+      - "YELLOW_WOOL"
+      - "LIME_WOOL"
+      - "PINK_WOOL"
+      - "GRAY_WOOL"
+      - "LIGHT_GRAY_WOOL"
+      - "CYAN_WOOL"
+      - "PURPLE_WOOL"
+      - "BLUE_WOOL"
+      - "BROWN_WOOL"
+      - "GREEN_WOOL"
+      - "RED_WOOL"
+      - "BLACK_WOOL"
+
+  # Fast Leaf Decay
+  # Leaves Decay much faster when trees are mined in survival mode.
+  fast-leaf-decay:
+    enabled: true
+    # How long it takes for a tree to start decaying
+    break-delay: 5
+    # How long it takes between decays
+    decay-delay: 1
+    # Whether or not to decay leaves one by one, or all at once
+    one-by-one: true
+    # Whether or not to spawn breaking particles
+    spawn-particles: true
+    # Whether or not to play breaking sounds
+    play-sounds: true
+
+  # Fixed Item Frames
+  # Shift right-click an item frame with iron bars to make it fixed
+  # Shift right-click an item frame with shears to make it not fixed
+  # Permissions:
+  # teakstweaks.fixed-item-frames
+  fixed-item-frames:
+    enabled: false
+    # The item to use when "fixing"/"unfixing" the item frame
+    # (If the item is a tool, one durability will be used, else the item will be consumed)
+    item-to-use: "SHEARS"
+
+  # Graves
+  # When a player dies, a grave is made at their location containing all their items. Right-click the grave to receive your items,
+  # and crouch to make it so only you can pick them up.
+  # Get a grave key to unlock any grave: `/grave key`
+  # Locate your last grave (if locatable is on): `/grave locate` or `/grave`
+  # NOTE: If you are using EssentialsX back command, you must have `register-back-in-listener` set to true in the Essentials config.yml
+  #
+  # Commands:
+  # /grave (Permission: teakstweaks.command.grave)
+  # /grave key (Permission: teakstweaks.command.grave.key)
+  # /grave locate (Permission: teakstweaks.command.grave.locate)
+  # /grave uninstall (Permission: teakstweaks.command.grave.uninstall)
+  graves:
+    enabled: false
+    # Whether or not graves hold the players xp
+    hold-xp: true
+    # Whether or not to hold all xp or just the xp dropped on death
+    keep-all-xp: false
+    # Whether or not it sends a message to the player telling the location of their grave
+    locatable: true
+    # Whether or not all players can take from a players grave
+    allow-robbing: false
+    # Whether or not to allow graves to be placed above the void
+    allow-void-graves: true
+    # Whether or not to allow graves to be generated when a player's inventory is empty
+    allow-empty-graves: true
+    # Whether or not to generate a grave when a player dies in creative mode
+    creative-graves: true
+    # Whether or not creative players will drop their items on death
+    # If allow-empty-graves is false, and this is false, creative players will not generate graves
+    creative-drops: true
+    # Whether or not to allow graves to generate when a player dies in lava
+    generate-in-lava: true
+    # Whether or not an info blob is sent to the console when a grave is created
+    # Includes the grave location, the player who died, and the items in the grave
+    console-info: false
+    # The minimum xp level a player must reach before a grave can be generated
+    # If set to 0, graves will always generate
+    # Example: If level-threshold is 5, and a player dies with 4 levels, the player will drop their items normally
+    # If level-threshold is 5, and a player dies with 5+ levels, the player will generate a grave
+    level-threshold: 0
+    # Whether or not to allow graves to be placed in water, if false, graves will generate on the surface of the water (or the next clear space above the water)
+    allow-water-graves: true
+
+  # Homes
+  # Allows you to set homes ('/home set <name>') and teleport back to them ('/home <name>')
+  #
+  # Commands:
+  # /home <name> (Permission: teakstweaks.command.home)
+  # /home set <name> (Permission: teakstweaks.command.home.set)
+  # /home delete <name> (Permission: teakstweaks.command.home.delete)
+  # /sethome <name> (Permission: teakstweaks.command.home.set)
+  # /deletehome <name> (Permission: teakstweaks.command.delete)
+  homes:
+    enabled: false
+    # Enter how many homes a player can have. Use 0 for unlimited homes.
+    max-homes: 0
+    # Enter the number of seconds required to wait between uses of the home command
+    teleport-cooldown: 0
+
+  # Husk Drops Sand
+  # Husks drop 0-2 sand upon death (Making it a renewable resource).
+  # With Looting, the amount is up to 2 + the Looting level.
+  husk-drops-sand:
+    enabled: true
+
+  # Insta Mine
+  # Instantly mine certain blocks if you have a netherite tool with efficiency 5 or higher, and haste 2 or higher.
+  #
+  # Permissions:
+  # teakstweaks.insta-mine
+  insta-mine:
+    enabled: false
+    blocks:
+      - "deepslate"
+      - "deepslate_bricks"
+      - "cracked_deepslate_bricks"
+      - "deepslate_tiles"
+      - "cracked_deepslate_tiles"
+      - "polished_deepslate"
+      - "chiseled_deepslate"
+
+  # Invisible Item Frames
+  # Shift right-click an item frame with shears to make it invisible
+  #
+  # Permissions:
+  # teakstweaks.invisible-item-frames
+  invisible-item-frames:
+    enabled: false
+    # The item to use when changing the item frame's visibility
+    # (If the item is a tool, one durability will be used, else the item will be consumed)
+    item-to-use: "BRUSH"
+
+  # Item Averages
+  # Adds a marker that tracks items flowing past it for 2 minutes, then calculates how many of each item will run through per hour
+  # Do not reload/restart the server while a tracker is in the world! In this case use /itemaverage remove to remove existing trackers.
+  #
+  # Commands:
+  # /itemaverages create (Permission: teakstweaks.command.itemaverages)
+  # /itemaverages uninstall (Permission: teakstweaks.command.itemaverages.uninstall)
+  item-averages:
+    enabled: false
+
+  # Keep Small
+  # Keep a mob in its child form (if it has one)
+  #
+  # Permissions:
+  # teakstweaks.keep-small
+  keep-small:
+    enabled: false
+    # Allow the mob to be kept in its child form (By Naming a mob 'keep small')
+    smallify: true
+    # Allow the mob to be set in its adult form (By Naming a mob 'grow')
+    grow: true
+
+  # Kill Boats
+  # Adds an admin command to kill all boats without passengers.
+  #
+  # Commands:
+  # /killboats (Permission: teakstweaks.command.killboats)
+  kill-boats:
+    enabled: false
+
+  # Larger Phantoms
+  # Makes the naturally spawning phantoms larger the longer you do not sleep.
+  larger-phantoms:
+    enabled: false
+
+  # Lectern Reset
+  # Reset a lectern's book to the first page after closing it
+  lectern-reset:
+    enabled: false
+
+  # Mini Blocks
+  # Adds mini blocks to the game. Craft them using the normal block in a Stonecutter.
+  mini-blocks:
+    enabled: true
+    # Amount of mini blocks to craft per normal block
+    per-cut: 8
+
+  # More Mob Heads
+  # Adds a chance to receive a mob head upon killing it.
+  # Be sure to check the data/mob_heads.json file for more customizability!
+  more-mob-heads:
+    enabled: true
+    # Allow creepers, skeletons, and zombies to drop their heads & skulls
+    use-base-heads: true
+    # Adds an advancement screen that shows all the mob heads you have collected
+    advancements:
+      enabled: true
+      # Whether or not to display the mob head advancements in chat
+      announce-in-chat: true
+
+  # Nether Portal Coords
+  # Adds a command that calculates where a nether portal must be placed in the other dimension. Useful for syncing up nether portals.
+  #
+  # Commands:
+  # /portal (Permission: teakstweaks.command.portal)
+  nether-portal-coords:
+    enabled: false
+
+  # Painting Picker
+  # Use a stonecutter to choose a painting's variant.
+  painting-picker:
+    enabled: false
+    # Whether or not to suggest the Unique Painting Items Resource pack (from Vanilla Tweaks)
+    suggest-pack: true
+
+  # Player Head Drops
+  # A player will drop their head when killed by another player. The item displays who the killer is.
+  player-head-drops:
+    enabled: true
+    # Whether to display who killed the player in the items lore (default: true)
+    display-killer: true
+
+  # Quick Commands
+  # Quickly switch game modes, reply, and more with simple commands.
+  quick-commands:
+    enabled: false
+    # Game mode switcher commands
+    #
+    # Commands:
+    # /gmc (Permission: teakstweaks.command.gmc)
+    # /gms (Permission: teakstweaks.command.gms)
+    # /gma (Permission: teakstweaks.command.gma)
+    # /gmsp (Permission: teakstweaks.command.gmsp)
+    gamemode: true
+    # Reply commands (/r, /reply)
+    # This overrides minecraft's default message system
+    #
+    # Commands:
+    # /reply <message> (Permission: teakstweaks.command.reply)
+    reply: true
+    # Feed command
+    # Sets the player's food level and saturation to full
+    #
+    # Commands:
+    # /feed [player] (Permission: teakstweaks.command.feed)
+    feed: true
+    # Heal command
+    # Sets the player's health to full
+    #
+    # Commands:
+    # /heal [player] (Permission: teakstweaks.command.heal)
+    heal: true
+    # Fly command
+    # Toggles the player's ability to fly
+    #
+    # Commands:
+    # /fly [player] (Permission: teakstweaks.command.fly)
+    fly: true
+    # Ender Chest command
+    # Opens the player's enderchest
+    #
+    # Commands:
+    # /enderchest (Permission: teakstweaks.command.enderchest)
+    enderchest: true
+    # Crafting Table command
+    # Opens the crafting table
+    #
+    # Commands:
+    # /craftingtable (Permission: teakstweaks.command.craftingtable)
+    craftingtable: true
+
+  # Real Time Clock
+  # Adds a command that allows you to view how long a world has been running in real time minutes and hours.
+  #
+  # Commands:
+  # /realtimeclock (Permission: teakstweaks.command.realtimeclock)
+  real-time-clock:
+    enabled: false
+
+  # Rotation Wrench (Redstone/Glazed Terracotta)
+  # Adds a custom wrench in-game that allows you to rotate redstone components, & glazed terracotta when right-clicking.
+  #
+  # Permissions:
+  # teakstweaks.rotation-wrench.redstone
+  # teakstweaks.rotation-wrench.terracotta
+  rotation-wrench:
+    enabled: false
+    # Whether or not to rotate redstone components
+    rotate-redstone: true
+    # Whether or not to rotate glazed terracotta
+    rotate-terracotta: true
+    # Whether or not to suggest the Rotation Wrench Resource pack (shows the wrench as a wrench item instead of carrot on a stick)
+    suggest-pack: false
+
+  # Sawmill
+  # Adds recipes to the Stonecutter to allow you to craft various wood items from planks, logs, wood, etc.
+  sawmill:
+    enabled: true
+
+  # Silence Mobs
+  # Adds the ability to silence mobs using a name tag. 'Silence Me'; 'Silence me'; 'silence me'; 'silence_me'; are all acceptable names.
+  #
+  # Permissions:
+  # teakstweaks.silence-mobs
+  silence-mobs:
+    enabled: false
+    # Whether or not you can silence minecart types
+    allow-minecarts: false
+
+  # Slime Cream
+  # Convert Slime Balls to Magma Cream by right-clicking a lava cauldron
+  # Convert Magma Cream to Slime Balls by right-clicking a water cauldron
+  #
+  # Permissions:
+  # teakstweaks.slime-cream
+  slime-cream:
+    enabled: false
+
+  # Spawn
+  # Enter '/spawn' to teleport to the world spawn point.
+  #
+  # Commands:
+  # /spawn (Permission: teakstweaks.command.spawn)
+  spawn:
+    enabled: false
+    # Name of the world to teleport to the spawn of (ex: 'world', 'world_nether', 'world_the_end', etc)
+    world: "world"
+    # Enter the number of seconds required to wait between uses of the spawn command
+    teleport-cooldown: 0
+    # Enter the number of seconds required to wait before teleporting
+    teleport-delay: 0
+
+  # Spawning Spheres
+  # Allows you to view the spawnable area around a center point through the use of glowing spheres. Useful for proofing farms
+  #
+  # Commands:
+  # /spawningspheres create (Permission: teakstweaks.command.spawningspheres.create)
+  # /spawningspheres remove (Permission: teakstweaks.command.spawningspheres.remove)
+  # /spawningspheres teleport (Permission: teakstweaks.command.spawningspheres.teleport)
+  spawning-spheres:
+    enabled: false
+
+  # Spectator Alts
+  # Allow players to add their own alt accounts as spectators
+  #
+  # Commands:
+  # /alts <add/remove/list> <alt> [player] (Permission: teakstweaks.command.alt / teakstweaks.command.alt.manage)
+  spectator-alts:
+    enabled: false
+    # Which gamemode to put alts in when they join
+    # Options: spectator, creative, survival, adventure
+    gamemode: "spectator"
+    # Whether or not to force alts to stay in spectator mode
+    force-gamemode: true
+    # Maximum amount of alts a player can have
+    # OP players have no limit
+    # Set to 0 to only allow OP players to set alts
+    # Set to -1 to allow all players to set unlimited alts
+    # OP players can add alts to other players by using /alts add <alt> <player>
+    max-alts: 1
+    # Whether or not to allow alts to teleport to other players
+    # Alts will always be able to teleport to their main account
+    allow-player-teleport: true
+
+  # Spectator Conduit Power
+  # Easily toggle conduit power when in spectator.
+  #
+  # Commands:
+  # /conduitpower (Permission: teakstweaks.command.conduitpower)
+  spectator-conduit-power:
+    enabled: false
+    # Whether or not to auto-enable conduit power when in spectator
+    auto-enable: true
+
+  # Spectator Night Vision
+  # Easily toggle night vision when in spectator.
+  #
+  # Commands:
+  # /nightvision (Permission: teakstweaks.command.nightvision)
+  spectator-night-vision:
+    enabled: false
+    # Whether or not to auto-enable night vision when in spectator
+    auto-enable: true
+
+  # Stair Chairs
+  # Allow players to sit on chairs
+  # Right-click a stair with a saddle to make it a chair
+  # Break the stair to remove the chair and get the saddle back
+  #
+  # Permissions:
+  # teakstweaks.stair-chairs.create
+  # teakstweaks.stair-chairs.sit
+  stair-chairs:
+    enabled: true
+
+  # Sudoku
+  # Allow players to commit sudoku
+  #
+  # Commands:
+  # /sudoku (Permission: teakstweaks.command.sudoku)
+  sudoku:
+    enabled: false
+
+  # Thunder Shrine
+  # A shrine that allows you to create a thunder storm when offered a Nether Star
+  #
+  # Commands:
+  # /shrine create (Permission: teakstweaks.command.shrine.create)
+  # /shrine remove (Permission: teakstweaks.command.shrine.remove)
+  # /shrine uninstall (Permission: teakstweaks.command.shrine.uninstall)
+  #
+  # Permissions:
+  # teakstweaks.thunder-shrine.use
+  thunder-shrine:
+    enabled: false
+    # Whether or not to show particles where shrines are
+    idle-particles: true
+    # Settings for summoning
+    summoning:
+      # What material is needed to summon a storm. Changing this may cause issues if you don't know what you are doing.
+      summoning-item: "NETHER_STAR"
+      # Whether or not to strike lightning when summoning a storm
+      strike-lightning: true
+      # Whether or not to show particles when summoning a storm
+      show-particles: true
+      # Whether or not to broadcast a message when a storm begins
+      broadcast-message: true
+
+  # TPA
+  # Enter '/tpa <player>' to request to teleport to another player.
+  #
+  # Commands:
+  # /tpa <player> (Permission: teakstweaks.command.tpa)
+  # /tpa accept (Permission: teakstweaks.command.tpa)
+  # /tpa cancel (Permission: teakstweaks.command.tpa)
+  # /tpahere <player> (Permission: teakstweaks.command.tpa)
+  # /tpahere accept (Permission: teakstweaks.command.tpa)
+  # /tpahere cancel (Permission: teakstweaks.command.tpa)
+  tpa:
+    enabled: false
+
+  # Track Raw Stats
+  # Adds 100+ scoreboards that track many different statistics. Especially useful for multiplayer.
+  track-raw-statistics:
+    enabled: true
+
+  # Track Statistics
+  # Adds statistics that are processed before-hand. E.g. Km swam, Km flown, etc.
+  track-statistics:
+    enabled: true
+
+  # Unlock All Recipes
+  # Automatically unlock all recipes as soon as you start playing.
+  #
+  # Permissions:
+  # teakstweaks.unlock-all-recipes
+  unlock-all-recipes:
+    enabled: true
+
+  # Unsticky Pistons
+  # Allow players to remove slime from pistons by right-clicking them with an axe
+  # Right-click a piston with a slimeball to make it sticky
+  #
+  # Permissions:
+  # teakstweaks.unsticky-pistons
+  unsticky-pistons:
+    enabled: false
+
+  # Villager Death Messages
+  # Notifies the server in chat when a villager dies. Displayes Coordinates and Dimension that it died in.
+  villager-death-messages:
+    enabled: false
+    # Whether or not to announce the death in chat, or only in console.
+    show-in-chat: true
+
+  # Wandering Trader Announcements
+  # Announces to nearby players when a Wandering Trader spawns in the world.
+  #
+  # Permissions:
+  # teakstweaks.wandering-trader-announcements
+  wandering-trader-announcements:
+    enabled: true
+    # How close a player has to be to the Wandering Trader to see the announcement
+    # Set to -1 to announce to all players
+    radius: 64
+
+  # Wandering Trades
+  # Adds Mini Blocks to the Wandering Trader's trades.
+  wandering-trades:
+    enabled: true
+    # Mini Blocks section of Wandering Trades
+    mini-blocks:
+      # Whether or not Wandering Trader's have mini blocks
+      has-mini-blocks: true
+      # How many mini block trades a trader will have
+      amount-of-trades: 4
+      # How many of each mini block a trader will sell
+      per-trade: 8
+    # Player heads section of Wandering Trades
+    player-heads:
+      # Whether or not Wandering Trader's have player heads
+      has-player-heads: true
+      # How many player head trades a trader will have
+      amount-of-trades: 4
+      # How many of each player head a trader will sell
+      per-trade: 4
+      # Read the server whitelist instead of the player name list
+      read-from-whitelist: false
+      # What Players will be available in the Wandering Trader shop. (Default: Hermitcraft members)
+      # To add your own set of heads, just make a list using ` - ` and put the in game name of the players you want.
+      players:
+        - "adam01110"
+        - "korinthe7"
+        - "LamaTovenaar"
+        - "POYPOYMAN"
+        - "P1st4shio"
+        - "Injuhgg"
+        - "TwinSaturn11723"
+        - "Freek2091303"
+
+  # Workstation Highlights
+  # Allows you to find the workstation of any villager.
+  #
+  # Commands:
+  # /workstationhighlight (Permission: teakstweaks.command.workstationhighlight)
+  workstation-highlights:
+    enabled: false
+
+  # XP Management
+  # Right-Click an enchanting table with an empty bottle to fill it with some of your XP.
+  #
+  # Permissions:
+  # teakstweaks.xp-management
+  xp-management:
+    enabled: true
+    # How much XP is taken when bottling XP
+    take-xp-amount: 8
+    # How much xp is given when throwing the XP bottle
+    return-xp-amount: 8
+    # Whether or not to display how much XP a bottle has in its item Lore
+    display-amount: true
+    # Whether or not to allow players to smelt the bottle for 100% xp back
+    allow-smelting: false
+    # Whether or not players can sneak to use all bottles in their hand
+    sneak-to-bottle-all: false
+
+# Crafting Tweaks
+crafting-tweaks:
+  # Select which Crafting Tweaks are enabled.
+  # If tweaks are disabled after being previously enabled, you may have an error in the server console saying a recipe cannot be found. Disregard this message.
+
+  # Back to Blocks
+  # Allows you to craft full blocks from stairs and slabs.
+  back-to-blocks:
+    enabled: false
+
+  # Blackstone Cobblestone
+  # Craft all items that require Cobblestone, using Blackstone.
+  blackstone-cobblestone:
+    enabled: true
+
+  # Charcoal to Black Dye
+  # Allows you to craft Charcoal into Black Dye.
+  charcoal-to-black-dye:
+    enabled: true
+
+  # Cheaper Resin Blocks
+  # Allows you to craft Resin Blocks using 4 Resin Clumps instead of 9.
+  cheaper-resin-blocks:
+    enabled: true
+
+  # Coal to Black Dye
+  # Allows you to craft Coal into Black Dye.
+  coal-to-black-dye:
+    enabled: true
+
+  # Copper Powered Rails
+  # Allows you to craft Powered Rails using Copper Ingots.
+  copper-powered-rails:
+    enabled: true
+
+  # Craftable Blackstone
+  # Allows you to craft Blackstone or Polished Blackstone using Basalt & Coal/Charcoal
+  craftable-blackstone:
+    enabled: false
+
+  # Craftable Bundles
+  # Allows you to craft the experimental bundle item. (Using 1 Leather and 1 String)
+  craftable-bundles:
+    enabled: false
+
+  # Craftable Chainmail
+  # Allows you to craft Chainmail Armor using Chains.
+  craftable-chainmail:
+    enabled: false
+
+  # Craftable Coral Blocks (2x2)
+  # Allows you to craft Coral Blocks from their Coral Plant in a 2x2. Both Tubes and Fans may be used interchangeably.
+  craftable-coral-blocks-2x2:
+    enabled: true
+
+  # Craftable Coral Blocks (3x3)
+  # Allows you to craft Coral Blocks from their Coral Plant in a 3x3. Both Tubes and Fans may be used interchangeably.
+  craftable-coral-blocks-3x3:
+    enabled: false
+
+  # Craftable Enchanted Golden Apples
+  # Allows you to craft Enchanted Golden Apples.
+  craftable-enchanted-golden-apples:
+    enabled: true
+
+  # Craftable Gilded Blackstone
+  # Allows you to craft Gilded Blackstone using a Gold Ingot and Blackstone.
+  craftable-gilded-blackstone:
+    enabled: false
+
+  # Craftable Gravel
+  # Allows you to craft Gravel from Flint.
+  craftable-gravel:
+    enabled: false
+
+  # Craftable Horse Armor
+  # Allows you to craft Horse Armor.
+  craftable-horse-armor:
+    enabled: true
+
+  # Craftable Name Tags
+  # Allows you to craft Name Tags.
+  craftable-name-tags:
+    enabled: true
+
+  # Craftable Saddles
+  # Allows you to craft Saddles.
+  craftable-saddles:
+    # TODO: disable in .6
+    enabled: true
+
+  # Craftable Small Dripleaf
+  # Allows you to craft Small dripleaves from a large dripleaf.
+  craftable-small-dripleaf:
+    enabled: false
+
+  # Craftable Spore Blossoms
+  # Allows you to craft Spore Blossoms using Lilacs, Azalea Leaves, and Honeycombs.
+  craftable-spore-blossoms:
+    enabled: false
+
+  # Double Slabs
+  # Allows you to craft 2 slabs from a single block.
+  double-slabs:
+    enabled: false
+
+  # Dropper to Dispenser
+  # Allows you to convert a Dropper to a Dispenser using a Bow, or by using String and Sticks.
+  dropper-to-dispenser:
+    enabled: false
+
+  # Log Chests
+  # Allows you to craft Chests from Logs.
+  log-chests:
+    enabled: false
+
+  # More Bark
+  # Craft 4 Bark instead of 3.
+  more-bark:
+    enabled: true
+
+  # More Bricks
+  # Craft 4 Bricks instead of 1.
+  more-bricks:
+    enabled: true
+
+  # More Copper Trapdoors
+  # Craft 12 copper trapdoors instead of 2.
+  more-copper-trapdoors:
+    enabled: true
+
+  # More Iron Trapdoors
+  # Craft 8 iron trapdoors instead of 2.
+  more-iron-trapdoors:
+    enabled: true
+
+  # More Packed Mud
+  # Craft 2 Packed Mud instead of 1.
+  more-packed-mud:
+    enabled: true
+
+  # More Sherds
+  # Craft 2 Sherds when combining a Pottery Sherd with a Brick.
+  more-sherds:
+    enabled: true
+
+  # More Stairs
+  # Craft 8 Stairs instead of 4.
+  more-stairs:
+    enabled: true
+
+  # More Trapdoors
+  # Craft 12 Trapdoors instead of 2.
+  more-trapdoors:
+    enabled: true
+
+  # Powder to Glass
+  # Smelt all colors of Concrete Powder into their respective Stained Glass color.
+  powder-to-glass:
+    enabled: false
+
+  # Rotten Flesh to Leather
+  # Allows you to smelt Rotten Flesh into Leather.
+  rotten-flesh-to-leather:
+    enabled: false
+
+  # Sandstone Dyeing
+  # Allows you to craft Sandstone with Red Dye to get Red Sandstone.
+  sandstone-dyeing:
+    enabled: false
+
+  # Smeltable Raw Ore Blocks
+  # Smelt Raw Ore Blocks to Ore Blocks.
+  smeltable-raw-ore-blocks:
+    enabled: false
+
+  # Straight to Shapeless
+  # Craft items such as Paper, Bread, and Shulker Boxes directly in your 2x2.
+  straight-to-shapeless:
+    enabled: true
+
+  # Unpackable Ice
+  # Allows you to break down Ice into 9 pieces. 1 Blue Ice to 9 Packed Ice to 81 Ice.
+  unpackable-ice:
+    enabled: true
+
+  # Unpackable Nether Wart
+  # Allows you to break down Nether Wart Blocks into 9 Nether Wart.
+  unpackable-nether-wart:
+    enabled: false
+
+  # Unpackable Quartz Blocks
+  # Allows you to break quartz blocks down into 4 quartz.
+  unpackable-quartz-blocks:
+    enabled: true
+
+  # Unpackable Wool
+  # Allows you to break down Wool into 4 String.
+  unpackable-wool:
+    enabled: true
+
+  # Universal Dyeing
+  # Allows you to dye any dyeable block to another color, no matter what color it is (does not include Concrete).
+  universal-dyeing:
+    enabled: true
+
+# Leave these options alone unless you know what you're doing.
+# Changing these values may cause unexpected issues!
+config:
+  created-version: "2.0.10-mc1.21.5"
+  version: "2.0.10-mc1.21.5"
+  dev-mode: false
