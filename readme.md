@@ -32,50 +32,62 @@
 
 ### Server Plugins (Paper/Spigot)
 
-- **[Spark](https://spark.lucko.me/)** - Performance profiler and monitoring
-- **[OkTreasures](https://hangar.papermc.io/Kyle/OkTreasures)** - Alternative buried treasure search
-- **[Otherside](https://hangar.papermc.io/Kyle/Otherside)** - Plugin to fix portal-based farms
-- **[PacketEvents](https://github.com/retrooper/packetevents)** - Library for Minecraft packet manipulation
-- **[SignedVelocity](https://github.com/4drian3d/SignedVelocity)** - Cancel or modify messages from Velocity without problems
-- **[ShieldFixes-Server](https://modrinth.com/plugin/shieldfixes-server)** - Fixes shield animation and sound glitch
-- **[Chunky](https://github.com/pop4959/Chunky)** - Pre-generates chunks, quickly and efficiently
-- **[KnockbackSync](https://modrinth.com/plugin/knockbacksync)** - Plugin for fair knockback regardless of ping
-- **[Creeper Recover](https://github.com/HttpRafa/creeper-recover)** - Recovers damage caused by creepers
-- **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
-- **[CMI](https://www.zrips.net/cmi/)** - A comprehensive server management plugin
-- **[CMILib](https://www.zrips.net/cmilib/)** - Library for core functionality and plugin support of cmi
-- **[PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI)** - allows information from plugins be shown
-- **[Teak's Tweaks](https://github.com/teakivy/teaks-tweaks)** - Toggleable Tweaks & Features including Vanilla Tweaks as a plugin
+| Plugin                 | Description                                                       | Links                                                      |
+| ---------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Spark**              | Performance profiler and monitoring                               | [Website](https://spark.lucko.me/)                         |
+| **OkTreasures**        | Alternative buried treasure search                                | [Hangar](https://hangar.papermc.io/Kyle/OkTreasures)       |
+| **Otherside**          | Plugin to fix portal-based farms                                  | [Hangar](https://hangar.papermc.io/Kyle/Otherside)         |
+| **PacketEvents**       | Library for Minecraft packet manipulation                         | [GitHub](https://github.com/retrooper/packetevents)        |
+| **SignedVelocity**     | Cancel or modify messages from Velocity without problems          | [GitHub](https://github.com/4drian3d/SignedVelocity)       |
+| **ShieldFixes-Server** | Fixes shield animation and sound glitch                           | [Modrinth](https://modrinth.com/plugin/shieldfixes-server) |
+| **Chunky**             | Pre-generates chunks, quickly and efficiently                     | [GitHub](https://github.com/pop4959/Chunky)                |
+| **KnockbackSync**      | Plugin for fair knockback regardless of ping                      | [Modrinth](https://modrinth.com/plugin/knockbacksync)      |
+| **Creeper Recover**    | Recovers damage caused by creepers                                | [GitHub](https://github.com/HttpRafa/creeper-recover)      |
+| **Floodgate**          | Hybrid mode plugin to allow for connections geyser                | [Website](https://geysermc.org/)                           |
+| **CMI**                | A comprehensive server management plugin                          | [Website](https://www.zrips.net/cmi/)                      |
+| **CMILib**             | Library for core functionality and plugin support of cmi          | [Website](https://www.zrips.net/cmilib/)                   |
+| **PlaceholderAPI**     | allows information from plugins be shown                          | [GitHub](https://github.com/PlaceholderAPI/PlaceholderAPI) |
+| **Teak's Tweaks**      | Toggleable Tweaks & Features including Vanilla Tweaks as a plugin | [GitHub](https://github.com/teakivy/teaks-tweaks)          |
 
 ### Server Datapacks
 
-- **[Blooming Biosphere](https://modrinth.com/datapack/blooming-biosphere)** - An overworld biome overhaul
-- **[Custom Biome Saplings](https://modrinth.com/datapack/terralith-biome-saplings)** - Allows Blooming Biosphere trees to be regrown
+| Datapack                                                | Description                                                         | Links                                                                                        |
+| ------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Blooming Biosphere**                                  | An overworld biome overhaul                                         | [Modrinth](https://modrinth.com/datapack/blooming-biosphere)                                 |
+| **Custom Biome Saplings**                               | Allows Blooming Biosphere trees to be regrown                       | [Modrinth](https://modrinth.com/datapack/terralith-biome-saplings)                           |
+| **Axe Effective Skulls [PurpurPack]**                   | Adds skulls and heads to the 'axe' mineable tag                     | [Modrinth](https://modrinth.com/datapack/purpurpacks-axe-effective-skulls)                   |
+| **Hoe Effective Cactus [PurpurPack]**                   | Adds cactus to the 'hoe' mineable tag                               | [Modrinth](https://modrinth.com/datapack/purpurpacks-hoe-effective-cactus)                   |
+| **Hoe Effective Froglights [PurpurPack]**               | Adds froglights to the hoe mineable tag                             | [Modrinth](https://modrinth.com/datapack/purpurpacks-hoe-effective-froglights)               |
+| **Pickaxe Effective Light Source Blocks [PurpurPack]**  | Adds light source blocks like glowstone to the pickaxe mineable tag | [Modrinth](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-light-source-blocks)  |
+| **Pickaxe Effective Reinforced Deepslate [PurpurPack]** | Puts reinforced deepslate into the pickaxe minable tag              | [Modrinth](https://modrinth.com/datapack/purpurpacks-pickaxe-effective-reinforced-deepslate) |
 
 ### Proxy Plugins (Velocity)
 
-- **[PacketEvents](https://github.com/retrooper/packetevents)** - Library for Minecraft packet manipulation
-- **[SignedVelocity](https://github.com/4drian3d/SignedVelocity)** - Cancel or modify messages from Velocity without problems
-- **[ViaVersion](https://viaversion.com/)** - Allow newer clients to connect to older servers
-- **[Geysermc](https://geysermc.org/)** - A bridge/proxy allowing bedrock to connect to java
-- **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
-- **[CMIV](https://www.zrips.net/cmiv/)** - Velocity network plugin for cmi
+| Plugin             | Description                                              | Links                                                |
+| ------------------ | -------------------------------------------------------- | ---------------------------------------------------- |
+| **PacketEvents**   | Library for Minecraft packet manipulation                | [GitHub](https://github.com/retrooper/packetevents)  |
+| **SignedVelocity** | Cancel or modify messages from Velocity without problems | [GitHub](https://github.com/4drian3d/SignedVelocity) |
+| **ViaVersion**     | Allow newer clients to connect to older servers          | [Website](https://viaversion.com/)                   |
+| **Geysermc**       | A bridge/proxy allowing bedrock to connect to java       | [Website](https://geysermc.org/)                     |
+| **Floodgate**      | Hybrid mode plugin to allow for connections geyser       | [Website](https://geysermc.org/)                     |
+| **CMIV**           | Velocity network plugin for cmi                          | [Website](https://www.zrips.net/cmiv/)               |
 
 ## <img src="assets/icons/rocket.svg" width="16" height="16" alt="rocket"> Development Setup
 
 ### Required Tools
 
-- **Git** - Version control
-- **Nerd Fonts** - Enhanced terminal display
-- **Just** - Command runner
-- **Jq** - Json processor
-- **Docker & Docker Compose** - Containerization
-- **Trashy** - Safe file deletion
+| Tool                        | Description               |
+| --------------------------- | ------------------------- |
+| **Git**                     | Version control           |
+| **Nerd Fonts**              | Enhanced terminal display |
+| **Just**                    | Command runner            |
+| **Jq**                      | Json processor            |
+| **Docker & Docker Compose** | Containerization          |
+| **Trashy**                  | Safe file deletion        |
 
 ### Recommended Tools
 
 - **Visual Studio Code** (fork, or any preferred editor)
-- **Lazydocker** - Docker container management
 
 ## <img src="assets/icons/handshake.svg" width="16" height="16" alt="handshake"> Contributing
 
