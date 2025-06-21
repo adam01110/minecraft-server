@@ -43,9 +43,9 @@
 - **[Creeper Recover](https://github.com/HttpRafa/creeper-recover)** - Recovers damage caused by creepers
 - **[Floodgate](https://geysermc.org/)** - Hybrid mode plugin to allow for connections geyser
 - **[CMI](https://www.zrips.net/cmi/)** - A comprehensive server management plugin
-- **[CMILib](https://www.zrips.net/cmilib/)** - Library for core functionality and plugin support of CMI
+- **[CMILib](https://www.zrips.net/cmilib/)** - Library for core functionality and plugin support of cmi
 - **[PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI)** - allows information from plugins be shown
-- **[Teak's Tweaks](https://github.com/teakivy/teaks-tweaks)** - toggleable Tweaks & Features including Vanilla Tweaks as a plugin
+- **[Teak's Tweaks](https://github.com/teakivy/teaks-tweaks)** - Toggleable Tweaks & Features including Vanilla Tweaks as a plugin
 
 ### Server Datapacks
 
