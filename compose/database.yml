@@ -12,13 +12,13 @@ services:
         limits:
           memory: 1g
     secrets:
-      - mariadb-pass
+      - mariadb-password
     environment:
       # rootless
       PUID: 1000
       PGID: 1000
       # password
-      FILE__MYSQL_ROOT_PASSWORD: /run/secrets/mariadb-pass
+      FILE__MYSQL_ROOT_PASSWORD: /run/secrets/mariadb-password
     networks:
       # network for mariadb to minecraft & velocity communication
       - mariadb
@@ -40,6 +40,19 @@ services:
       resources:
         limits:
           memory: 512mb
+    secrets:
+      - valkey-password
+    # command needed to use password
+    command: [
+        "sh",
+        "-c",
+        '
+        docker-entrypoint.sh
+        --requirepass "$$(cat $$VALKEY_PASSWORD_FILE)"
+        ',
+      ]
+    environment:
+      VALKEY_PASSWORD_FILE: /run/secrets/valkey-password
     networks:
       # network for valkey to minecraft & velocity communication
       - valkey
@@ -66,5 +79,7 @@ networks:
   valkey:
 
 secrets:
-  mariadb-pass:
-    file: ../secrets/mariadb-pass.txt
+  mariadb-password:
+    file: ../secrets/mariadb-password.txt
+  valkey-password:
+    file: ../secrets/valkey-password.txt

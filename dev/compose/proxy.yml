@@ -29,6 +29,8 @@ services:
       # memory limit
       MEMORY: 512m
     volumes:
+      # server mount, only needed for it to stop creating random volumes
+      - velocity-server:/server
       # config
       - ../config/velocity/velocity.toml:/config/velocity.toml
       # plugins
@@ -44,6 +46,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
 
 volumes:
+  velocity-server:
   velocity-logs:
 
 networks:

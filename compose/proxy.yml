@@ -36,6 +36,10 @@ services:
       resources:
         limits:
           memory: 1g
+    secrets:
+      - luckperms-database-username
+      - luckperms-database-password
+      - valkey-password
     ports:
       # bedrock port
       - 19132:19132/udp
@@ -58,7 +62,13 @@ services:
       MINECRAFT_VERSION: 1.21.5
       # memory limit
       MEMORY: 512m
+      # secrets
+      CFG_LUCKPERMS_DATABASE_USERNAME_FILE: /run/secrets/luckperms-database-username
+      CFG_LUCKPERMS_DATABASE_PASSWORD_FILE: /run/secrets/luckperms-database-password
+      CFG_VALKEY_PASSWORD_FILE: /run/secrets/valkey-password
     volumes:
+      # server mount, only needed for it to stop creating random volumes
+      - velocity-server:/server
       # config
       - ../config/velocity/velocity.toml:/config/velocity.toml
       # plugins
@@ -80,6 +90,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
 
 volumes:
+  velocity-server:
   velocity-logs:
   geyser-cache:
   geyser-extra-cache:
@@ -94,3 +105,11 @@ networks:
     external: true
   valkey:
     external: true
+
+secrets:
+  luckperms-database-username:
+    file: ../secrets/luckperms-database-username.txt
+  luckperms-database-password:
+    file: ../secrets/luckperms-database-password.txt
+  valkey-password:
+    file: ../secrets/valkey-password.txt

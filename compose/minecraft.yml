@@ -17,6 +17,9 @@ services:
       - seed-obfuscation-key
       - cmi-database-username
       - cmi-database-password
+      - luckperms-database-username
+      - luckperms-database-password
+      - valkey-password
     environment:
       EULA: true
       GUI: false
@@ -55,6 +58,9 @@ services:
       CFG_SEED_OBFUSCATION_KEY_FILE: /run/secrets/seed-obfuscation-key
       CFG_CMI_DATABASE_USERNAME_FILE: /run/secrets/cmi-database-username
       CFG_CMI_DATABASE_PASSWORD_FILE: /run/secrets/cmi-database-password
+      CFG_LUCKPERMS_DATABASE_USERNAME_FILE: /run/secrets/luckperms-database-username
+      CFG_LUCKPERMS_DATABASE_PASSWORD_FILE: /run/secrets/luckperms-database-password
+      CFG_VALKEY_PASSWORD_FILE: /run/secrets/valkey-password
     env_file:
       # velocity forwarding secret
       - ../secrets/forwarding-secret.env
@@ -114,3 +120,9 @@ secrets:
     file: ../secrets/cmi-database-username.txt
   cmi-database-password:
     file: ../secrets/cmi-database-password.txt
+  luckperms-database-username:
+    file: ../secrets/luckperms-database-username.txt
+  luckperms-database-password:
+    file: ../secrets/luckperms-database-password.txt
+  valkey-password:
+    file: ../secrets/valkey-password.txt

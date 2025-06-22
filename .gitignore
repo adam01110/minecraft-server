@@ -41,6 +41,8 @@
 /plugins/minecraft/KnockbackSync/*.txt
 /plugins/minecraft/CreeperRecover/stats.json
 /plugins/minecraft/PlaceholderAPI/expansions/*
+/plugins/minecraft/LuckPerms/libs/*.jar
+/plugins/velocity/luckperms/libs/*.jar
 /plugins/velocity/geyserextras/optionalpacks/*.mcpack
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
