@@ -158,8 +158,6 @@ performance:
     enabled: true
     # Seed obfuscation key for XXHash.
     seed-obfuscation-key: ${CFG_SEED_OBFUSCATION_KEY}
-  # Whether to cache the isEyeInFluid method to improve performance and reduce memory usage.
-  cache-eye-fluid-status: true
   # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
   enable-cached-minecraft-to-bukkit-entitytype-convert: true
   # Optimizes entity brains when

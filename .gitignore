@@ -44,6 +44,8 @@
 /plugins/minecraft/LuckPerms/libs/*.jar
 /plugins/velocity/luckperms/libs/*.jar
 /plugins/velocity/geyserextras/optionalpacks/*.mcpack
+/plugins/minecraft/WorldGuard/cache/*
+/plugins/minecraft/Vulcan/*
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
 
@@ -63,3 +65,6 @@
 !/dev/plugins/minecraft/spark
 # keep default dev configs
 !/dev/datapacks/bukkit
+
+# keep vulcan config
+/plugins/minecraft/Vulcan/config.yml

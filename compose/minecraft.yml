@@ -19,7 +19,8 @@ services:
       - cmi-database-password
       - luckperms-database-username
       - luckperms-database-password
-      - valkey-password
+      - coreprotect-database-username
+      - coreprotect-database-password
     environment:
       EULA: true
       GUI: false
@@ -60,7 +61,8 @@ services:
       CFG_CMI_DATABASE_PASSWORD_FILE: /run/secrets/cmi-database-password
       CFG_LUCKPERMS_DATABASE_USERNAME_FILE: /run/secrets/luckperms-database-username
       CFG_LUCKPERMS_DATABASE_PASSWORD_FILE: /run/secrets/luckperms-database-password
-      CFG_VALKEY_PASSWORD_FILE: /run/secrets/valkey-password
+      CFG_COREPROTECT_DATABASE_USERNAME_FILE: /run/secrets/coreprotect-database-username
+      CFG_COREPROTECT_DATABASE_PASSWORD_FILE: /run/secrets/coreprotect-database-password
     env_file:
       # velocity forwarding secret
       - ../secrets/forwarding-secret.env
@@ -124,5 +126,7 @@ secrets:
     file: ../secrets/luckperms-database-username.txt
   luckperms-database-password:
     file: ../secrets/luckperms-database-password.txt
-  valkey-password:
-    file: ../secrets/valkey-password.txt
+  coreprotect-database-username:
+    file: ../secrets/coreprotect-database-username.txt
+  coreprotect-database-password:
+    file: ../secrets/coreprotect-database-password.txt

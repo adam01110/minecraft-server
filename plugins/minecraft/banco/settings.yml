@@ -1,0 +1,86 @@
+# Enabling this will send more messages to console
+debug: false
+# Language that is sent when a player's locale is not available
+defaultLanguageTag: en-US
+# Delay between queued task execution in ticks (20 ticks = 1 second)
+taskQueueDelay: 2
+# Task execution type (use SYNC in small servers or switch to ASYNC in larger ones)
+# Do note that ASYNC may introduce unexpected behavior
+taskExecutionOrder: ASYNC
+
+# Configuration for currency
+currency:
+  # Currency name in singular
+  nameSingular: Diamond
+  # Currency name in plural
+  namePlural: Diamonds
+  # Currency symbol
+  symbol: 💎
+  # How money should be displayed (default = 1,451.34)
+  format: "#,###.##"
+  # Whether to prevent items configured below from dropping when killing mobs
+  # This prevents players from building money farms, so it's recommended to keep it enabled
+  removeDrops: true
+  # Enable this if you want to give players the chance of changing lower value items for higher value ones by using /balance change
+  changeMoney: false
+  # Order in which items will be added/removed from storages. You can add or remove entries to customize your setup
+  inventoryOrder:
+    - BUNDLE
+    - PLAYER_INVENTORY
+    - ENDER_CHEST
+    - OTHER
+  # Worlds where banco's economy should be disabled
+  blacklistedWorlds: []
+  # Configure items and their respective value
+  # Please, put less valuable items first. You can use MiniMessage to format text
+  itemRegistry:
+    - type: vanilla
+      material: DEEPSLATE_DIAMOND_ORE
+      value: "1"
+      glowEffect: true
+    - type: vanilla
+      material: DIAMOND_ORE
+      value: "4"
+      glowEffect: true
+
+# Configuration for the database
+database:
+  # Database type (SQLITE, MYSQL or MARIADB)
+  type: SQLITE
+  # Time between each cache clean in minutes
+  cacheClearInterval: 5
+  # Don't change this, you might lose all your data
+  databaseVersion: 1
+  # Don't change this, you might lose all your data
+  initialized: false
+
+# Configuration for the update checker
+updateChecker:
+  # Whether the update checker should be enabled
+  enabled: false
+  # Interval of hours between each check
+  intervalInHours: 6
+
+# Configuration for commands
+commands:
+  infoPrefix: <dark_aqua>🔔</dark_aqua>
+  warnPrefix: <gold>⚠</gold>
+  successPrefix: <green>✔</green>
+  errorPrefix: <dark_red>❌</dark_red>
+  # Disabling commands will only work in Paper and its forks
+  balance:
+    enabled: false
+  pay:
+    enabled: false
+  balanceTop:
+    enabled: false
+
+# Configuration for menus/GUIs
+menus:
+  info:
+    title: ʙᴀɴᴄᴏ
+    keyFormat: §e§l%s
+    valueFormat: §7%s
+  balanceTop:
+    title: ʙᴀɴᴄᴏ
+    format: §e§l%s §a%s §7- §a%s

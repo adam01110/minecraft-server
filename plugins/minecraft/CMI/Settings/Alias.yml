@@ -65,14 +65,14 @@ Alias:
     Tab: true
   cback:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi balance $1-
   balance:
     Enabled: true
     Tab: true
   bal:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi baltop $1-
   baltop:
     Enabled: true
@@ -166,14 +166,14 @@ Alias:
     Tab: true
   ci:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi clearchat $1-
   clearchat:
     Enabled: true
     Tab: true
   cc:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi clearender $1-
   clearender:
     Enabled: true
@@ -196,10 +196,10 @@ Alias:
     Tab: true
   # /cmi condense $1-
   condense:
-    Enabled: true
-    Tab: true
-  compact:
     Enabled: false
+    Tab: false
+  compact:
+    Enabled: true
     Tab: true
   # /cmi counter $1-
   counter:
@@ -227,7 +227,7 @@ Alias:
     Tab: true
   freeze:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi customrecipe $1-
   customrecipe:
     Enabled: true
@@ -242,10 +242,10 @@ Alias:
     Tab: true
   # /cmi dispose $1-
   dispose:
-    Enabled: true
-    Tab: true
-  trash:
     Enabled: false
+    Tab: false
+  trash:
+    Enabled: true
     Tab: true
   # /cmi distance $1-
   distance:
@@ -301,26 +301,26 @@ Alias:
     Tab: true
   # /cmi ender $1-
   ender:
-    Enabled: true
-    Tab: true
+    Enabled: false
+    Tab: false
   ce:
     Enabled: false
-    Tab: true
+    Tab: false
   ec:
     Enabled: false
-    Tab: true
+    Tab: false
   cend:
     Enabled: false
-    Tab: true
+    Tab: false
   enderchest:
-    Enabled: false
+    Enabled: true
     Tab: true
   oe:
     Enabled: false
-    Tab: true
+    Tab: false
   echest:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi endgateway $1-
   endgateway:
     Enabled: true
@@ -413,27 +413,27 @@ Alias:
     Tab: true
   # /cmi gm $1-
   gm:
-    Enabled: true
-    Tab: true
-  gamemode:
     Enabled: false
+    Tab: false
+  gamemode:
+    Enabled: true
     Tab: true
   # /cmi gm creative $1-
   gmc:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi gm survival $1-
   gms:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi gm spectator $1-
   gmsp:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi gm adventure $1-
   gma:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi god $1-
   god:
     Enabled: true
@@ -523,20 +523,20 @@ Alias:
     Tab: true
   whois:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi inv $1-
   inv:
     Enabled: true
     Tab: true
   cinv:
     Enabled: false
-    Tab: true
+    Tab: false
   invsee:
     Enabled: false
-    Tab: true
+    Tab: false
   oi:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi invcheck $1-
   invcheck:
     Enabled: true
@@ -575,7 +575,7 @@ Alias:
     Tab: true
   i:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi itemcmdata $1-
   itemcmdata:
     Enabled: true
@@ -600,11 +600,11 @@ Alias:
     Enabled: true
     Tab: true
   iname:
-    Enabled: true
-    Tab: true
+    Enabled: false
+    Tab: false
   rename:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi itemnbt $1-
   itemnbt:
     Enabled: true
@@ -742,7 +742,7 @@ Alias:
     Tab: true
   w:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi mute $1-
   mute:
     Enabled: true
@@ -896,10 +896,10 @@ Alias:
     Tab: true
   # /cmi removewarp $1-
   removewarp:
-    Enabled: true
-    Tab: true
-  delwarp:
     Enabled: false
+    Tab: false
+  delwarp:
+    Enabled: true
     Tab: true
   # /cmi repair $1-
   repair:
@@ -918,7 +918,7 @@ Alias:
     Enabled: true
     Tab: true
   r:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi resetback $1-
   resetback:
@@ -926,7 +926,7 @@ Alias:
     Tab: true
   rback:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi resetdbfields $1-
   resetdbfields:
     Enabled: true
@@ -937,10 +937,10 @@ Alias:
     Tab: true
   # /cmi rt $1-
   rt:
-    Enabled: true
-    Tab: true
-  rtp:
     Enabled: false
+    Tab: false
+  rtp:
+    Enabled: true
     Tab: true
   # /cmi sameip $1-
   sameip:
@@ -960,8 +960,8 @@ Alias:
     Tab: true
   # /cmi sc $1-
   sc:
-    Enabled: true
-    Tab: true
+    Enabled: false
+    Tab: false
   scopy:
     Enabled: true
     Tab: true
@@ -979,10 +979,10 @@ Alias:
     Tab: true
   salvage:
     Enabled: false
-    Tab: true
+    Tab: false
   recycle:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi schedule $1-
   schedule:
     Enabled: true
@@ -1093,10 +1093,10 @@ Alias:
     Tab: true
   lightning:
     Enabled: false
-    Tab: true
+    Tab: false
   thor:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi smithingtable $1-
   smithingtable:
     Enabled: true
@@ -1356,7 +1356,7 @@ Alias:
     Tab: true
   wspeed:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi warn $1-
   warn:
     Enabled: true
@@ -1371,7 +1371,7 @@ Alias:
     Tab: true
   warps:
     Enabled: false
-    Tab: true
+    Tab: false
   # /cmi warpgroups $1-
   warpgroups:
     Enabled: true

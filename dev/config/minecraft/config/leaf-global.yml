@@ -159,8 +159,6 @@ performance:
     enabled: false
     # Seed obfuscation key for XXHash.
     seed-obfuscation-key: 5880563285794528639
-  # Whether to cache the isEyeInFluid method to improve performance and reduce memory usage.
-  cache-eye-fluid-status: false
   # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
   enable-cached-minecraft-to-bukkit-entitytype-convert: true
   # Optimizes entity brains when

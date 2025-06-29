@@ -28,58 +28,12 @@ services:
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
-
-  valkey:
-    image: valkey/valkey:alpine
-    container_name: valkey
-    hostname: valkey
-    restart: unless-stopped
-    stop_grace_period: 1m
-    # memory limit
-    deploy:
-      resources:
-        limits:
-          memory: 512mb
-    secrets:
-      - valkey-password
-    # command needed to use password
-    command: [
-        "sh",
-        "-c",
-        '
-        docker-entrypoint.sh
-        --requirepass "$$(cat $$VALKEY_PASSWORD_FILE)"
-        ',
-      ]
-    environment:
-      VALKEY_PASSWORD_FILE: /run/secrets/valkey-password
-    networks:
-      # network for valkey to minecraft & velocity communication
-      - valkey
-    volumes:
-      # data
-      - valkey:/data
-      # timezone
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
-    healthcheck:
-      test: ["CMD", "valkey-cli", "ping"]
-      interval: 1m
-      timeout: 5s
-      retries: 5
-      start_interval: 5s
-      start_period: 30s
-
 volumes:
   mariadb:
-  valkey:
 
 networks:
   mariadb:
-  valkey:
 
 secrets:
   mariadb-password:
     file: ../secrets/mariadb-password.txt
-  valkey-password:
-    file: ../secrets/valkey-password.txt
