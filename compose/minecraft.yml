@@ -15,11 +15,8 @@ services:
           memory: 10g
     secrets:
       - seed-obfuscation-key
-      - cmi-database-username
       - cmi-database-password
-      - luckperms-database-username
       - luckperms-database-password
-      - coreprotect-database-username
       - coreprotect-database-password
     environment:
       EULA: true
@@ -57,15 +54,14 @@ services:
       # secrets
       REPLACE_ENV_VARIABLES: true
       CFG_SEED_OBFUSCATION_KEY_FILE: /run/secrets/seed-obfuscation-key
-      CFG_CMI_DATABASE_USERNAME_FILE: /run/secrets/cmi-database-username
       CFG_CMI_DATABASE_PASSWORD_FILE: /run/secrets/cmi-database-password
-      CFG_LUCKPERMS_DATABASE_USERNAME_FILE: /run/secrets/luckperms-database-username
       CFG_LUCKPERMS_DATABASE_PASSWORD_FILE: /run/secrets/luckperms-database-password
-      CFG_COREPROTECT_DATABASE_USERNAME_FILE: /run/secrets/coreprotect-database-username
       CFG_COREPROTECT_DATABASE_PASSWORD_FILE: /run/secrets/coreprotect-database-password
     env_file:
       # velocity forwarding secret
       - ../secrets/forwarding-secret.env
+      # seed
+      - ../secrets/seed.env
     networks:
       # network for velocity to minecraft communication
       - velocity-minecraft
@@ -118,15 +114,9 @@ networks:
 secrets:
   seed-obfuscation-key:
     file: ../secrets/seed-obfuscation-key.txt
-  cmi-database-username:
-    file: ../secrets/cmi-database-username.txt
   cmi-database-password:
     file: ../secrets/cmi-database-password.txt
-  luckperms-database-username:
-    file: ../secrets/luckperms-database-username.txt
   luckperms-database-password:
     file: ../secrets/luckperms-database-password.txt
-  coreprotect-database-username:
-    file: ../secrets/coreprotect-database-username.txt
   coreprotect-database-password:
     file: ../secrets/coreprotect-database-password.txt

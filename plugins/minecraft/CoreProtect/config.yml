@@ -10,7 +10,7 @@ table-prefix: coreprotect_
 mysql-host: mariadb
 mysql-port: 3306
 mysql-database: coreprotect
-mysql-username: "${CFG_COREPROTECT_DATABASE_USERNAME}"
+mysql-username: "coreprotect-user"
 mysql-password: "${CFG_COREPROTECT_DATABASE_PASSWORD}"
 
 # If modified, will automatically attempt to translate languages phrases.

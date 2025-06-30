@@ -37,7 +37,6 @@ services:
         limits:
           memory: 1g
     secrets:
-      - luckperms-database-username
       - luckperms-database-password
     ports:
       # bedrock port
@@ -62,7 +61,6 @@ services:
       # memory limit
       MEMORY: 512m
       # secrets
-      CFG_LUCKPERMS_DATABASE_USERNAME_FILE: /run/secrets/luckperms-database-username
       CFG_LUCKPERMS_DATABASE_PASSWORD_FILE: /run/secrets/luckperms-database-password
     volumes:
       # server mount, only needed for it to stop creating random volumes
@@ -103,7 +101,5 @@ networks:
     external: true
 
 secrets:
-  luckperms-database-username:
-    file: ../secrets/luckperms-database-username.txt
   luckperms-database-password:
     file: ../secrets/luckperms-database-password.txt

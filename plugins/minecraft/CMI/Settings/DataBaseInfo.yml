@@ -4,7 +4,7 @@ storage:
   method: mysql
 mysql:
   # Requires Mysql.
-  username: "${CFG_CMI_DATABASE_USERNAME}"
+  username: "cmi-user"
   password: "${CFG_CMI_DATABASE_PASSWORD}"
   hostname: mariadb:3306
   database: cmi

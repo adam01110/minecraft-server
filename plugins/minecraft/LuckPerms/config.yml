@@ -98,7 +98,7 @@ data:
   database: luckperms
 
   # Credentials for the database.
-  username: "${CFG_LUCKPERMS_DATABASE_USERNAME}"
+  username: "luckperms-user"
   password: "${CFG_LUCKPERMS_DATABASE_PASSWORD}"
 
   # These settings apply to the MySQL connection pool.
