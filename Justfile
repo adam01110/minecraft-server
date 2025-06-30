@@ -31,7 +31,7 @@ logs-broadcaster:
   docker compose -f ./compose/broadcaster.yml logs
 
 # attach
-attach-mariadb:
+attach-database:
   docker exec -it mariadb mysql -u root -p
 attach-minecraft:
   docker compose -f ./compose/minecraft.yml attach minecraft
