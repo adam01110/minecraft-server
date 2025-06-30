@@ -226,7 +226,7 @@ watch-files: false
 #                    configured below.
 #   => custom        Uses a messaging service provided using the LuckPerms API.
 #   => auto          Attempts to automatically setup a messaging service using redis or sql.
-messaging-service: redis
+messaging-service: sql
 
 # If LuckPerms should automatically push updates after a change has been made with a command.
 auto-push-updates: true

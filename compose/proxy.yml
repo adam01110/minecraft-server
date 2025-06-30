@@ -75,8 +75,8 @@ services:
       # forwarding secret
       - ../secrets/forwarding.secret:/server/forwarding.secret
       # geyser key
-      - ../secrets/key.pem:/plugins/floodgate/key.pem:ro
-      - ../secrets/key.pem:/plugins/Geyser-Velocity/key.pem:ro
+      - ../secrets/key.pem:/plugins/floodgate/key.pem
+      - ../secrets/key.pem:/plugins/Geyser-Velocity/key.pem
       # geyser cache
       - geyser-cache:/data/plugins/Geyser-Velocity/cache
       - geyser-cache:/data/plugins/geyserextras/cache
