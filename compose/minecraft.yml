@@ -91,9 +91,9 @@ services:
       - ../config/minecraft/purpur/purpur.yml:/data/purpur.yml
       - ../config/minecraft/server/server.properties:/data/server.properties
       # geyser key
-      - ../secrets/key.pem:/data/plugins/floodgate/key.pem:ro
+      - ../secrets/key.pem:/data/plugins/floodgate/key.pem
       # cmi key
-      - ../secrets/security.key:/data/plugins/CMI/security.key:ro
+      - ../secrets/security.key:/data/plugins/CMI/security.key
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
