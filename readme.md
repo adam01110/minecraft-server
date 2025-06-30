@@ -32,29 +32,30 @@
 
 ### Server Plugins (Paper/Spigot)
 
-| Plugin                 | Description                                                        | Links                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| **Spark**              | Performance profiler and monitoring.                               | [Website](https://spark.lucko.me/)                                                                          |
-| **OkTreasures**        | Alternative buried treasure search.                                | [Hangar](https://hangar.papermc.io/Kyle/OkTreasures)                                                        |
-| **Otherside**          | Plugin to fix portal-based farms.                                  | [Hangar](https://hangar.papermc.io/Kyle/Otherside)                                                          |
-| **PacketEvents**       | Library for Minecraft packet manipulation.                         | [GitHub](https://github.com/retrooper/packetevents)                                                         |
-| **SignedVelocity**     | Cancel or modify messages from Velocity without problems.          | [GitHub](https://github.com/4drian3d/SignedVelocity)                                                        |
-| **ShieldFixes-Server** | Fixes shield animation and sound glitch.                           | [Modrinth](https://modrinth.com/plugin/shieldfixes-server)                                                  |
-| **Chunky**             | Pre-generates chunks, quickly and efficiently.                     | [GitHub](https://github.com/pop4959/Chunky)                                                                 |
-| **KnockbackSync**      | Plugin for fair knockback regardless of ping.                      | [Modrinth](https://modrinth.com/plugin/knockbacksync)                                                       |
-| **Creeper Recover**    | Recovers damage caused by creepers.                                | [GitHub](https://github.com/HttpRafa/creeper-recover)                                                       |
-| **Floodgate**          | Hybrid mode plugin to allow for connections geyser.                | [Website](https://geysermc.org/)                                                                            |
-| **CMI**                | A comprehensive server management plugin.                          | [Website](https://www.zrips.net/cmi/)                                                                       |
-| **CMILib**             | Library for core functionality and plugin support of cmi.          | [Website](https://www.zrips.net/cmilib/)                                                                    |
-| **PlaceholderAPI**     | Allows information from plugins be shown.                          | [GitHub](https://github.com/PlaceholderAPI/PlaceholderAPI)                                                  |
-| **Teak's Tweaks**      | Toggleable Tweaks & Features including Vanilla Tweaks as a plugin. | [GitHub](https://github.com/teakivy/teaks-tweaks)                                                           |
-| **Luckperms**          | Allows server admins to control what features players can use.     | [Website](https://luckperms.net/)                                                                           |
-| **VaultUnlocked**      | A PR-friendly version of Vault.                                    | [GitHub](https://github.com/TheNewEconomy/VaultUnlockedAPI)                                                 |
-| **Banco**              | A simple item-based economy plugin.                                | [GitHub](https://github.com/myth-MC/banco)                                                                  |
-| **RedstoneLimiter**    | Smart performance plugin to limit Redstone contraptions.           | [BuiltByBit](https://builtbybit.com/resources/redstonelimiter-smart-redstone-limiter.23133/)                |
-| **WorldGuard**         | Protect blocks and areas of Minecraft worlds from griefing.        | [Website](https://enginehub.com/worldguard/)                                                                |
-| **FastAsyncWorldEdit** | Blazingly fast world manipulation.                                 | [GitHub](https://github.com/IntellectualSites/FastAsyncWorldEdit)                                           |
-| **Vulcan**             | Cheat-detection system.                                            | [SpigotMc](https://www.spigotmc.org/resources/vulcan-anti-cheat-advanced-cheat-detection-1-8-1-21-7.83626/) |
+| Plugin                 | Description                                                               | Links                                                                                                       |
+| ---------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Spark**              | Performance profiler and monitoring.                                      | [Website](https://spark.lucko.me/)                                                                          |
+| **OkTreasures**        | Alternative buried treasure search.                                       | [Hangar](https://hangar.papermc.io/Kyle/OkTreasures)                                                        |
+| **Otherside**          | Plugin to fix portal-based farms.                                         | [Hangar](https://hangar.papermc.io/Kyle/Otherside)                                                          |
+| **PacketEvents**       | Library for Minecraft packet manipulation.                                | [GitHub](https://github.com/retrooper/packetevents)                                                         |
+| **SignedVelocity**     | Cancel or modify messages from Velocity without problems.                 | [GitHub](https://github.com/4drian3d/SignedVelocity)                                                        |
+| **ShieldFixes-Server** | Fixes shield animation and sound glitch.                                  | [Modrinth](https://modrinth.com/plugin/shieldfixes-server)                                                  |
+| **Chunky**             | Pre-generates chunks, quickly and efficiently.                            | [GitHub](https://github.com/pop4959/Chunky)                                                                 |
+| **KnockbackSync**      | Plugin for fair knockback regardless of ping.                             | [Modrinth](https://modrinth.com/plugin/knockbacksync)                                                       |
+| **Creeper Recover**    | Recovers damage caused by creepers.                                       | [GitHub](https://github.com/HttpRafa/creeper-recover)                                                       |
+| **Floodgate**          | Hybrid mode plugin to allow for connections geyser.                       | [Website](https://geysermc.org/)                                                                            |
+| **CMI**                | A comprehensive server management plugin.                                 | [Website](https://www.zrips.net/cmi/)                                                                       |
+| **CMILib**             | Library for core functionality and plugin support of cmi.                 | [Website](https://www.zrips.net/cmilib/)                                                                    |
+| **PlaceholderAPI**     | Allows information from plugins be shown.                                 | [GitHub](https://github.com/PlaceholderAPI/PlaceholderAPI)                                                  |
+| **Teak's Tweaks**      | Toggleable Tweaks & Features including Vanilla Tweaks as a plugin.        | [GitHub](https://github.com/teakivy/teaks-tweaks)                                                           |
+| **Luckperms**          | Allows server admins to control what features players can use.            | [Website](https://luckperms.net/)                                                                           |
+| **RedstoneLimiter**    | Smart performance plugin to limit Redstone contraptions.                  | [BuiltByBit](https://builtbybit.com/resources/redstonelimiter-smart-redstone-limiter.23133/)                |
+| **WorldGuard**         | Protect blocks and areas of Minecraft worlds from griefing.               | [Website](https://enginehub.com/worldguard/)                                                                |
+| **FastAsyncWorldEdit** | Blazingly fast world manipulation.                                        | [GitHub](https://github.com/IntellectualSites/FastAsyncWorldEdit)                                           |
+| **Vulcan**             | Cheat-detection system.                                                   | [SpigotMc](https://www.spigotmc.org/resources/vulcan-anti-cheat-advanced-cheat-detection-1-8-1-21-7.83626/) |
+| **Scythe**             | Allow players to automatically replant crops, or gather with right-click. | [GitHub](https://github.com/Simplexity-Development/Scythe)                                                  |
+| **Heards Panic**       | Herds panic when one of them gets hit.                                    | [GitHub](https://github.com/Sideways-Sky/HerdsPanic)                                                        |
+| **Click Shop**         | A simple, innovative, customizable shop plugin.                           | [GitHub](https://github.com/Clickism/ClickShop)                                                             |
 
 ### Server Datapacks
 

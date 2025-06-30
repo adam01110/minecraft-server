@@ -273,7 +273,7 @@ gameplay-mechanisms:
   afk-command:
     # The AFK command based on Minecraft built-in idle-timeout mechanism
     # Rest of AFK settings are in the Purpur config
-    enabled: false
+    enabled: true
 
 #############
 #  NETWORK  #
@@ -322,8 +322,8 @@ misc:
     # <detail>, shows detail of the command exception.
     unknown-command: default
   rebrand:
-    server-mod-name: Leaf
-    server-gui-name: Leaf Console
+    server-mod-name: Aln
+    server-gui-name: Aln Console
   sentry:
     # Sentry DSN for improved error logging, leave blank to disable,
     # Obtain from https://sentry.io/

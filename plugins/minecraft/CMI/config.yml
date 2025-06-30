@@ -1688,7 +1688,6 @@ Enchanting:
     # By disabling this, no limitation to enchanting will be applied
     # This only applies for enchant command not for natural enchanting
     Enabled: true
-    # TODO: make limits higher?
     MaxLevel:
       density: 5
       swift_sneak: 3

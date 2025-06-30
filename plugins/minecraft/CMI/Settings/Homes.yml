@@ -13,7 +13,7 @@ Homes:
       # When enabled we will expand area for homes from 10 to 28
       Expanded: false
       # Keep it empty if you want to use global infill material
-      Border: ''
+      Border: ""
       # Material around homes when its not in expanded state
       Infill: WHITE_STAINED_GLASS_PANE
       InfoButton:
@@ -22,13 +22,13 @@ Homes:
         Slot: 1
         Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
         Commands:
-        - closeinv!
+          - closeinv!
       CloseButton:
         Use: true
         Slot: 9
         Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
         Commands:
-        - closeinv!
+          - closeinv!
       bedButton:
         Use: true
         Slot: 4
@@ -55,10 +55,10 @@ Homes:
   # If players home group if not find then amount will be set to 1
   # To have unlimited homes use cmi.command.sethome.unlimited permission
   # In addition to this you can use simple numeric permission node cmi.command.sethome.[number] which will define max number of homes player can have
-  Groups:
-    Newbie: 2
-    Advanced: 3
-    Vip: 5
+  Groups: []
+  #  Newbie: 2
+  #  Advanced: 3
+  #  Vip: 5
   # Requires cmi.bedhome permission node
   # When set to true by interacting with bed, regular home location will be created
   # When set to false vanilla bed home location will be set
@@ -70,7 +70,7 @@ Homes:
   # When enabled, plugin will check if player can break block in that area before creating new home location
   # This allows to prevent setting homes in protected areas
   # Can be bypassed with cmi.command.sethome.bypass
-  CheckBlockBreak: false
+  CheckBlockBreak: true
   # Name for default home location. By default its "Home"
   DefaultName: Home
   # Name for bed location. By default its "Home"
@@ -82,13 +82,13 @@ Homes:
     # When enabled home creation will be limited by defined criteria
     # This can be bypassed if you have cmi.command.sethome.bypasslimit permission node
     Use: false
-    Groups:
-      Example1:
-        Amount: 3
-        Worlds:
-        - testWorld
-      Example2:
-        Amount: 5
-        Worlds:
-        - testWorld2
-        - testWorld3
+    Groups: []
+    #  Example1:
+    #    Amount: 3
+    #    Worlds:
+    #      - testWorld
+    #  Example2:
+    #    Amount: 5
+    #    Worlds:
+    #      - testWorld2
+    #      - testWorld3

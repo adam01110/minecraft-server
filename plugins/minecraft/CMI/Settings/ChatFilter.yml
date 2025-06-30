@@ -7,21 +7,21 @@ ChatFilter:
   Priority: LOW
   Deny:
     ipBlock:
-      Enabled: true
-      Group: Advertising
-      InformConsole: true
-      Regex:
-        - '[a-zA-Z0-9\-\.]+\s?(\.|dot|\(dot\)|-|;|:|,|_|\/)\s?([a-zA-Z]{2}|aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel)\b'
-        - \b[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}\b
-      ReplaceWith: ""
-      BlockType: others
-      includePrivateMessages: true
-      msgToStaff: "&4!&6[playerName] &4advertising with: &r[message]"
-      Commands: []
+      #Enabled: false
+      #Group: Advertising
+      #InformConsole: true
+      #Regex:
+      #  - '[a-zA-Z0-9\-\.]+\s?(\.|dot|\(dot\)|-|;|:|,|_|\/)\s?([a-zA-Z]{2}|aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel)\b'
+      #  - \b[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}\b
+      #ReplaceWith: ""
+      #BlockType: others
+      #includePrivateMessages: true
+      #msgToStaff: "&4!&6[playerName] &4advertising with: &r[message]"
+      #Commands: []
   # List of regex filter to exlude from block list. Usefull if you want to block all ip/host address but want to allow usage of your own server.
-  WhiteList:
-    - \bgoogle.\s?([a-zA-Z]{2,4})\b
-    - \bspigotmc.\s?([a-zA-Z]{2,4})\b
+  WhiteList: []
+  #  - \bgoogle.\s?([a-zA-Z]{2,4})\b
+  #  - \bspigotmc.\s?([a-zA-Z]{2,4})\b
   DuplicatedMessagePrevention:
     # When set to true, plugin will prevent spaming of same or similar messages in short time range. Can be bypased with cmi.chatfilter.spambypass permission
     Use: false

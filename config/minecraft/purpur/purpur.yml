@@ -18,7 +18,7 @@ settings:
     afk-title-away: <gold><bold>AFK:<red>You are now AFK...:10:70:20
     afk-command-cooldown: 0
     afk-command-cooldown-msg: <gray>You need to wait %time%s to use /afk.
-    afk-broadcast-use-display-name: false
+    afk-broadcast-use-display-name: true
     afk-tab-list-prefix: "[AFK] "
     afk-tab-list-suffix: ""
     credits-command-output: <green>%s has been shown the end credits

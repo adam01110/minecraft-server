@@ -7,7 +7,7 @@ TabList:
   # Enable or disable grouped format tablist's
   # You can save some resources by disabling this if you are not interested in grouped format tablist feature
   # If disabled then this will use only default format and will skip checking for custom one to save some resources if needed
-  GroupedEnabled: true
+  GroupedEnabled: false
   Updates:
     # automatically updates tab list every x seconds for ALL online players
     # If you are using static Footer and Header you can disable this by setting to -1
@@ -29,50 +29,50 @@ TabList:
   # Full list can be checked ingame with /cmi placeholders
   GeneralFormat:
     # This will define how others see players name in tab list
-    PlayerName: '[playerDisplayName]'
+    PlayerName: "[playerDisplayName]"
     Header:
-      '1':
-      - '&f------------------------------------'
-      - '&7Welcome'
-      - '&7Online &f%server_online%&7/&f%server_max_players%'
-      - '&f------------------------------------'
+      "1":
+        - "&8&m                                    "
+        - "&7Welcome"
+        - "&7Online &f%server_online%"
+        - "&8&m                                    "
     Footer:
-      '1':
-      - '&f------------------------------------'
-      - '&7%player_world% &f%player_x%:&7%player_y%:&f%player_z%'
-      - '&7Money: &f%vault_eco_balance_formatted% &7Time: &f%server_time_HH:mm:ss%'
-      - '&f------------------------------------'
+      "1":
+        - "&8&m                                    "
+      #  - "&7%player_world% &f%player_x%:&7%player_y%:&f%player_z%"
+      #  - "&7Money: &f%vault_eco_balance_formatted% &7Time: &f%server_time_HH:mm:ss%"
+      #  - "&8&m                                    "
   useGeneralName: false
   # When this set to true, in case you dint defined PlayerName, Header or Footer in GroupFormat, then default one from GeneralFormat will be used
-  useGeneralHeader: false
-  useGeneralFooter: false
+  useGeneralHeader: true
+  useGeneralFooter: true
   # Defines custom formats to be used for players.
   # Any player which have cmi.tablist.[number] permission node will use defined grouped format in tablist
   # Id should be a number and in case player has more than one, bigger number id will be used
   # You can have as many groups as you want by increasing increment
-  GroupFormat:
-    '1':
-      PlayerName: '&2{&r[playerDisplayName]&2}'
-      Header:
-        '1':
-        - '&f------------------------------------'
-        - '&7Online &f%server_online%&7/&f%server_max_players%'
-        - '&f------------------------------------'
-      Footer:
-        '1':
-        - '&f------------------------------------'
-        - '&7%player_world% &f%player_x%:&7%player_y%:&f%player_z%'
-        - '&7Time: &f%server_time_HH:mm:ss%'
-        - '&f------------------------------------'
-    '2':
-      PlayerName: '&c[&r[playerDisplayName]&c]'
-      Header:
-        '1':
-        - '&f------------------------------------'
-        - '&7Online &f%server_online%&7/&f%server_max_players%'
-        - '&f------------------------------------'
-      Footer:
-        '1':
-        - '&f------------------------------------'
-        - '&7Money: &f%vault_eco_balance_formatted% &7Time: &f%server_time_HH:mm:ss%'
-        - '&f------------------------------------'
+  GroupFormat: []
+  #  "1":
+  #   PlayerName: "&2{&r[playerDisplayName]&2}"
+  #   Header:
+  #     "1":
+  #       - "&f------------------------------------"
+  #       - "&7Online &f%server_online%&7/&f%server_max_players%"
+  #       - "&f------------------------------------"
+  #   Footer:
+  #     "1":
+  #       - "&f------------------------------------"
+  #       - "&7%player_world% &f%player_x%:&7%player_y%:&f%player_z%"
+  #       - "&7Time: &f%server_time_HH:mm:ss%"
+  #       - "&f------------------------------------"
+  #  "2":
+  #   PlayerName: "&c[&r[playerDisplayName]&c]"
+  #   Header:
+  #     "1":
+  #       - "&f------------------------------------"
+  #       - "&7Online &f%server_online%&7/&f%server_max_players%"
+  #       - "&f------------------------------------"
+  #   Footer:
+  #     "1":
+  #       - "&f------------------------------------"
+  #       - "&7Money: &f%vault_eco_balance_formatted% &7Time: &f%server_time_HH:mm:ss%"
+  #       - "&f------------------------------------"

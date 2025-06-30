@@ -1,0 +1,31 @@
+errors:
+  cooldown: <red>Sorry, That command is on cooldown for<time> longer</red>
+  custom-item-not-enabled: <red>Sorry, custom items are not enabled in the config,
+    and thus this command is not able to be used.</red>
+  must-hold-tool: <red>You must be holding a valid tool to be able to automatically
+    replant
+  no-permission: <red>You do not have the required Permission to run this command</red>
+  not-a-player: Sorry! This command can only be run by a player
+  tool-nearly-broken: <red>Your tool is nearly broken, scythe functionality disabled
+    until tool is repaired
+  unknown-command: <red>Unknown Command</red>
+feedback:
+  config-reloaded: <gold>Scythe Config Reloaded!</gold>
+  item:
+    given: <green>You have given <name> a scythe</green>
+    obtained: <green>You have obtained a scythe!</green>
+    received: <green><name> has given you a scythe!</green>
+  toggle-disabled: <prefix><grey>Scythe functionality <red>disabled</red>!</grey>
+  toggle-enabled: <prefix><green>Scythe functionality enabled!</green>
+help:
+  main: <grey>Scythe allows players to harvest grown crops without needing to replant</grey>
+  reload: "<yellow>/scythe reload \n<grey>• Reloads config settings</grey></yellow>"
+  toggle: "<yellow>/scythe toggle \n<grey>• Toggle scythe on or off</grey></yellow>"
+insert:
+  time-format:
+    group: <hour><min><sec>
+    hour: ' <yellow><count></yellow> hour'
+    hours: ' <yellow><count></yellow> hours'
+    minute: ' <yellow><count></yellow> mins'
+    second: ' <yellow><count></yellow> sec'
+prefix: '<gold><bold>[</bold><yellow>Scythe</yellow><bold>]<reset> '

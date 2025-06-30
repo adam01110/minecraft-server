@@ -1,0 +1,75 @@
+# Scythe
+auto-replant:
+  enabled: true
+  require-seeds: true
+  require-tool: true
+  delay-ticks: 1
+right-click-harvest:
+  enabled: false
+  require-tool: true
+# Only applies if "require-tool" is true in any of the above categories
+tools:
+  enabled-tools:
+    - minecraft:wooden_hoe
+    - minecraft:stone_hoe
+    - minecraft:iron_hoe
+    - minecraft:golden_hoe
+    - minecraft:diamond_hoe
+    - minecraft:netherite_hoe
+  # Item models should be declared like "namespace:id"
+  required-item-models: []
+  # If custom item is enabled, 'enabled tools' and 'required item models' will be overridden
+  # Item type must be a hoe of some kind if it's going to till the ground
+  custom-item:
+    enabled: false
+    custom-name: <yellow>Scythe</yellow>
+    lore:
+      - <white>This is some cool lore</white>
+      - <green>Idk you should probably change this</green>
+      - <gradient:blue:green>Colors and stuff yay</gradient>
+    item-type: WOODEN_HOE
+    item-model: ""
+    enchantment-glint: true
+    max-durability: 2031
+    command-cooldown-seconds: 600
+  # Note: In vanilla, harvesting normally crops does NOT use durability.
+  # This will cause the tool to lose durability on right-click harvest ONLY
+  durability:
+    harvest-uses-durability: true
+    replant-uses-durability: true
+    prevent-tool-break: false
+    minimum-durability: 10
+
+# Please choose a sound from this list: https://jd.papermc.io/paper/1.21.4/org/bukkit/Sound.html
+sounds:
+  enabled: true
+  break-sound: BLOCK_CROP_BREAK
+  plant-sound: ITEM_CROP_PLANT
+  # between 0 and 2
+  volume: 1.0
+  # between 0 and 2
+  pitch: 1.0
+# Please choose a particle from this list: https://jd.papermc.io/paper/1.20/org/bukkit/Particle.html
+particles:
+  harvest:
+    enabled: true
+    particle: BLOCK
+    count: 40
+    # how far from the center particles should go, in blocks
+    spread: 0.5
+  replant:
+    enabled: true
+    particle: HAPPY_VILLAGER
+    count: 2
+    spread: 0.5
+# Crops the plugin should work on, list of materials is here: https://jd.papermc.io/paper/1.21.4/org/bukkit/Material.html
+# Note, the material must have the BlockData of 'Ageable' - note, most other ageable blocks in the list don't work as intended.
+allowed-crops:
+  - BEETROOTS
+  - CARROTS
+  - COCOA
+  - NETHER_WART
+  - POTATOES
+  - WHEAT
+# - PUMPKIN_STEM
+# - MELON_STEM

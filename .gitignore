@@ -46,6 +46,8 @@
 /plugins/velocity/geyserextras/optionalpacks/*.mcpack
 /plugins/minecraft/WorldGuard/cache/*
 /plugins/minecraft/Vulcan/*
+/plugins/minecraft/ClickShop/shops/*
+/plugins/minecraft/ClickShop/data.yml
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
 
