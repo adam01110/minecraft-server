@@ -43,7 +43,6 @@ setup:
   docker network create velocity-minecraft
   docker network create broadcaster-velocity
   docker network create mariadb
-  docker network create valkey
   scripts/download-leaf.sh
   openssl rand -base64 9 | tr -dc 'a-zA-Z0-9' | head -c12 | tee secrets/forwarding.secret | sed 's/^/PAPER_VELOCITY_SECRET: /' > secrets/forwarding-secret.env
   head /dev/urandom | tr -dc '1-9' | head -c 19 > secrets/seed-obfuscation-key.txt
