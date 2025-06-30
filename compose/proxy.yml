@@ -19,7 +19,7 @@ services:
       - infrarust-velocity
     volumes:
       # config
-      - ../config/infrarust/config.yaml:/etc/infrarust/config.yaml
+      - ../config/infrarust/config.yml:/etc/infrarust/config.yaml
       - ../config/infrarust/proxies:/etc/infrarust/proxies
       # timezone
       - /etc/timezone:/etc/timezone:ro
@@ -73,7 +73,7 @@ services:
       # logs
       - velocity-logs:/server/logs
       # forwarding secret
-      - ../secrets/forwarding.secret:/server/forwarding.secret:ro
+      - ../secrets/forwarding.secret:/server/forwarding.secret
       # geyser key
       - ../secrets/key.pem:/plugins/floodgate/key.pem:ro
       - ../secrets/key.pem:/plugins/Geyser-Velocity/key.pem:ro
