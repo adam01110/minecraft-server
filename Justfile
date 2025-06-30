@@ -32,7 +32,7 @@ logs-broadcaster:
 
 # attach
 attach-database:
-  docker exec -it mariadb mysql -u root -p
+  docker exec -it mariadb /usr/bin/mariadb -u root -p
 attach-minecraft:
   docker compose -f ./compose/minecraft.yml attach minecraft
 attach-velocity:
