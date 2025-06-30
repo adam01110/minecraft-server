@@ -1,7 +1,7 @@
 name: minecraft-server
 services:
   infrarust:
-    image: infrarust/infrarust:latest
+    image: shadowner/infrarust:latest
     container_name: infrarust
     hostname: infrarust
     restart: unless-stopped
