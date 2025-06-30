@@ -12,21 +12,15 @@
 
 ### Infrastructure
 
-| Component                   | Description                                                | Links                                                     |
-| --------------------------- | ---------------------------------------------------------- | --------------------------------------------------------- |
-| **Leaf**                    | High-performance Minecraft server software                 | [GitHub](https://github.com/Winds-Studio/Leaf)            |
-| **Velocity**                | Modern proxy for Minecraft networks                        | [GitHub](https://github.com/PaperMC/Velocity)             |
-| **Infrarust**               | Universal Minecraft Reverse Proxy                          | [GitHub](https://github.com/shadowner/infrarust)          |
-| **Broadcaster**             | Geyser extension that broadcasts the server over Xbox Live | [GitHub](https://github.com/MCXboxBroadcast/Broadcaster)  |
-| **docker-minecraft-server** | Dockerized Minecraft server                                | [GitHub](https://github.com/itzg/docker-minecraft-server) |
-| **docker-mc-proxy**         | Dockerized Minecraft proxy                                 | [GitHub](https://github.com/itzg/docker-mc-proxy)         |
-
-### Database & Cache
-
-| Component   | Description             | Links                                         |
-| ----------- | ----------------------- | --------------------------------------------- |
-| **MariaDB** | Primary database server | [GitHub](https://github.com/MariaDB/server)   |
-| **Valkey**  | In-memory data store    | [GitHub](https://github.com/valkey-io/valkey) |
+| Component                   | Description                                                 | Links                                                     |
+| --------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- |
+| **Leaf**                    | High-performance Minecraft server software.                 | [GitHub](https://github.com/Winds-Studio/Leaf)            |
+| **Velocity**                | Modern proxy for Minecraft networks.                        | [GitHub](https://github.com/PaperMC/Velocity)             |
+| **Infrarust**               | Universal Minecraft Reverse Proxy.                          | [GitHub](https://github.com/shadowner/infrarust)          |
+| **Broadcaster**             | Geyser extension that broadcasts the server over Xbox Live. | [GitHub](https://github.com/MCXboxBroadcast/Broadcaster)  |
+| **docker-minecraft-server** | Dockerized Minecraft server.                                | [GitHub](https://github.com/itzg/docker-minecraft-server) |
+| **docker-mc-proxy**         | Dockerized Minecraft proxy.                                 | [GitHub](https://github.com/itzg/docker-mc-proxy)         |
+| **MariaDB**                 | Database server.                                            | [GitHub](https://github.com/MariaDB/server)               |
 
 ## <img src="assets/icons/plugin.svg" width="16" height="16" alt="plug"> Plugins
 

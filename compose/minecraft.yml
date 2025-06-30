@@ -67,7 +67,6 @@ services:
       - velocity-minecraft
       # networks for databases
       - mariadb
-      - valkey
     volumes:
       # put stuff here by default
       # mostly cache
