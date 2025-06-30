@@ -19,8 +19,8 @@ services:
       - infrarust-velocity
     volumes:
       # config
-      - ../config/infrarust/config.yml:/etc/infrarust/config.yaml
-      - ../config/infrarust/proxies:/etc/infrarust/proxies
+      - ../config/infrarust/config.yml:/app/config/config.yaml
+      - ../config/infrarust/proxies:/app/config/proxies
       # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
