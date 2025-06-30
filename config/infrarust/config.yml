@@ -21,7 +21,7 @@ options:
 
 # configrations
 file_provider:
-  proxies_path: ["./proxies"]
+  proxies_path: ["/app/config/proxies"]
   file_type: "yaml"
   # disable hot reload
   # as its not needed now
