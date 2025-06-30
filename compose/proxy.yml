@@ -50,7 +50,6 @@ services:
       - broadcaster-velocity
       # networks for databases
       - mariadb
-      - valkey
     environment:
       TYPE: VELOCITY
       # disable rcon
