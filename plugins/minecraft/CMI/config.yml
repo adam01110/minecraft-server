@@ -792,7 +792,7 @@ DisplayName:
   # Format of players display name. By default only nick name will be visible, if its set, if not, then players name
   # Possible custom varibales: {prefix} {suffix} {nicknameprefix}
   # Supports placeholders
-  Format: "{prefix} {nickName}{suffix}"
+  Format: "{prefix} &r{nickName}{suffix}"
   # Defines regex for valid nick name
   # By default only letters and numbers are allowed
   # If you want to allow any letter from any language use [^\p{L}0-9\-\_]
