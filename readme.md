@@ -50,6 +50,7 @@
 | **Scythe**             | Allow players to automatically replant crops, or gather with right-click. | [GitHub](https://github.com/Simplexity-Development/Scythe)                                                  |
 | **Heards Panic**       | Herds panic when one of them gets hit.                                    | [GitHub](https://github.com/Sideways-Sky/HerdsPanic)                                                        |
 | **Click Shop**         | A simple, innovative, customizable shop plugin.                           | [GitHub](https://github.com/Clickism/ClickShop)                                                             |
+| **VaultUnlocked**      | A PR-friendly version of Vault.                                           | [GitHub](https://github.com/TheNewEconomy/VaultUnlockedAPI)                                                 |
 
 ### Server Datapacks
 
