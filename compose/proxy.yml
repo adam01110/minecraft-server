@@ -1,9 +1,9 @@
 name: minecraft-server
 services:
-  router-minecraft:
+  router:
     image: itzg/mc-router:latest
-    container_name: router-minecraft
-    hostname: router-minecraft
+    container_name: router
+    hostname: router
     restart: unless-stopped
     stop_grace_period: 1m
     environment:
