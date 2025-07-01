@@ -33,6 +33,7 @@ volumes:
 
 networks:
   mariadb:
+    external: true
 
 secrets:
   mariadb-password:
