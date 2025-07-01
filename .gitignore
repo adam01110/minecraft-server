@@ -48,6 +48,7 @@
 /plugins/minecraft/Vulcan/*
 /plugins/minecraft/ClickShop/shops/*
 /plugins/minecraft/ClickShop/data.yml
+/plugins/velocity/Geyser-Velocity/cache/*
 ## and the dev stuff
 /dev/plugins/minecraft/spark/tmp-client/*
 

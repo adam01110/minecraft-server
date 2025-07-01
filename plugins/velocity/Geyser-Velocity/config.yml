@@ -1,12 +1,12 @@
 # --------------------------------
 # Geyser Configuration File
-#
+# 
 # A bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition.
-#
+# 
 # GitHub: https://github.com/GeyserMC/Geyser
 # Discord: https://discord.gg/geysermc
 # Wiki: https://wiki.geysermc.org/
-#
+# 
 # NOTICE: See https://wiki.geysermc.org/geyser/setup/ for the setup guide. Many video tutorials are outdated.
 # In most cases, especially with server hosting providers, further hosting-specific configuration is required.
 # --------------------------------
@@ -227,5 +227,6 @@ use-direct-connection: true
 # when Java packets aren't being handled over the network.
 # This requires use-direct-connection to be true.
 disable-compression: true
+
 
 config-version: 4
