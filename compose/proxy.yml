@@ -6,6 +6,10 @@ services:
     hostname: router
     restart: unless-stopped
     stop_grace_period: 1m
+    deploy:
+      resources:
+        limits:
+          memory: 128m
     environment:
       USE_PROXY_PROTOCOL: true
       MAPPING: |
