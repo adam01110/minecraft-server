@@ -1,29 +1,27 @@
 name: minecraft-server
 services:
-  infrarust:
-    image: shadowner/infrarust:latest
-    container_name: infrarust
-    hostname: infrarust
+  router-minecraft:
+    image: itzg/mc-router:latest
+    container_name: router-minecraft
+    hostname: router-minecraft
     restart: unless-stopped
     stop_grace_period: 1m
-    # memory limit
-    deploy:
-      resources:
-        limits:
-          memory: 100mb
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    environment:
+      USE_PROXY_PROTOCOL: true
+      MAPPING: |
+        mc.friet.men=minecraft:25565
     ports:
-      # port for java
       - 25565:25565
     networks:
-      # network for infrarust to velocity communication
-      - infrarust-velocity
+      - router-minecraft
     volumes:
-      # config
-      - ../config/infrarust/config.yml:/app/config/config.yaml
-      - ../config/infrarust/proxies:/app/config/proxies
-      # timezone
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
+    depends_on:
+      minecraft:
+        condition: service_healthy
 
   velocity:
     image: itzg/mc-proxy:latest
@@ -42,8 +40,8 @@ services:
       # bedrock port
       - 19132:19132/udp
     networks:
-      # network for infrarust to velocity communication
-      - infrarust-velocity
+      # network for mc-router to velocity communication
+      - router-velocity
       # network for velocity to minecraft communication
       - velocity-minecraft
       # network for broadcaster to velocity communication
@@ -92,7 +90,7 @@ volumes:
   geyser-extra-cache:
 
 networks:
-  infrarust-velocity:
+  router-velocity:
   velocity-minecraft:
     external: true
   broadcaster-velocity:

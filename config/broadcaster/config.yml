@@ -16,11 +16,11 @@ session:
 
   # The data to broadcast over xbox live, this is the default if querying is enabled
   session-info:
-    host-name: "Geyser Test Server"
-    world-name: "\u00A7aGeyserMC \u00A7bDemo \u00A7f& \u00A7cTest \u00A7fServer"
+    host-name: "BastionMC"
+    world-name: "\u00A79joinst this servere now worme."
     players: 0
-    max-players: 20
-    ip: test.geysermc.org
+    max-players: 100
+    ip: mc.friet.men
     port: 19132
 
 # Friend/follower list sync settings

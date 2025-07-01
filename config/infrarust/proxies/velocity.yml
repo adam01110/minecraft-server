@@ -1,6 +1,0 @@
-domains:
-  - "mc.friet.men"
-addresses:
-  - "velocity:25566"
-
-sendProxyProtocol: true

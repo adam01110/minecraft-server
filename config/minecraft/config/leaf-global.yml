@@ -322,8 +322,8 @@ misc:
     # <detail>, shows detail of the command exception.
     unknown-command: default
   rebrand:
-    server-mod-name: Aln
-    server-gui-name: Aln Console
+    server-mod-name: Bastion
+    server-gui-name: Bastion Console
   sentry:
     # Sentry DSN for improved error logging, leave blank to disable,
     # Obtain from https://sentry.io/
