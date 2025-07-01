@@ -73,7 +73,7 @@ Chat:
   Ranged:
     # Defines range of regular messages to travel
     # Set to -1 to disable range restriction
-    General: 512
+    General: -1
     # Defines range of shout messages to travel
     # Shout messages should start with ! and player should have cmi.chat.shout permission
     # GeneralRange should be enabled
