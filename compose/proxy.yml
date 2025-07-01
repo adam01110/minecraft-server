@@ -6,8 +6,6 @@ services:
     hostname: router-minecraft
     restart: unless-stopped
     stop_grace_period: 1m
-    labels:
-      - com.centurylinklabs.watchtower.enable=true
     environment:
       USE_PROXY_PROTOCOL: true
       MAPPING: |
@@ -15,7 +13,7 @@ services:
     ports:
       - 25565:25565
     networks:
-      - router-minecraft
+      - router-velocity
     volumes:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
