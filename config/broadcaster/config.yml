@@ -19,7 +19,7 @@ session:
     host-name: "BastionMC"
     world-name: "\u00A79joinst this servere now worme."
     players: 0
-    max-players: 100
+    max-players: 0
     ip: mc.friet.men
     port: 19132
 

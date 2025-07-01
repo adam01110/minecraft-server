@@ -74,6 +74,7 @@
 | **Floodgate**      | Hybrid mode plugin to allow for connections geyser.            | [Website](https://geysermc.org/)                     |
 | **CMIV**           | Velocity network plugin for cmi.                               | [Website](https://www.zrips.net/cmiv/)               |
 | **Luckperms**      | Allows server admins to control what features players can use. | [website](https://luckperms.net/)                    |
+| **MiniMOTD**       | Basic server list MOTD plugin                                  | [GitHub](https://github.com/jpenilla/MiniMOTD)       |
 
 ## <img src="assets/icons/rocket.svg" width="16" height="16" alt="rocket"> Development Setup
 
