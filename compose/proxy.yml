@@ -9,7 +9,7 @@ services:
     environment:
       USE_PROXY_PROTOCOL: true
       MAPPING: |
-        mc.friet.men=minecraft:25565
+        mc.friet.men=velocity:25565
     ports:
       - 25565:25565
     networks:
@@ -18,8 +18,8 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     depends_on:
-      minecraft:
-        condition: service_healthy
+      velocity:
+        condition: service_started
 
   velocity:
     image: itzg/mc-proxy:latest
