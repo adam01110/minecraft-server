@@ -4,7 +4,7 @@
 
 ## <img src="assets/icons/info.svg" width="16" height="16" alt="clipboard"> Server Information
 
-- **Version:** 1.21.5 (will update to .6 as soon as possible)
+- **Version:** 1.21.5 (will update to .7 as soon as possible)
 - **Platforms:** Java Edition & Bedrock Edition
 - **Discord:** [Join our community](https://discord.gg/zV7FcdJRgj)
 
@@ -16,7 +16,7 @@
 | --------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- |
 | **Leaf**                    | High-performance Minecraft server software.                 | [GitHub](https://github.com/Winds-Studio/Leaf)            |
 | **Velocity**                | Modern proxy for Minecraft networks.                        | [GitHub](https://github.com/PaperMC/Velocity)             |
-| **Infrarust**               | Universal Minecraft Reverse Proxy.                          | [GitHub](https://github.com/shadowner/infrarust)          |
+| **mc-router**               | Routes Minecraft client connections to backend servers.     | [GitHub](https://github.com/itzg/mc-router)               |
 | **Broadcaster**             | Geyser extension that broadcasts the server over Xbox Live. | [GitHub](https://github.com/MCXboxBroadcast/Broadcaster)  |
 | **docker-minecraft-server** | Dockerized Minecraft server.                                | [GitHub](https://github.com/itzg/docker-minecraft-server) |
 | **docker-mc-proxy**         | Dockerized Minecraft proxy.                                 | [GitHub](https://github.com/itzg/docker-mc-proxy)         |
