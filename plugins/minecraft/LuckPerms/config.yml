@@ -116,22 +116,22 @@ data:
     # - For maximum performance and responsiveness to spike demands, it is recommended to not set
     #   this value and instead allow the pool to act as a fixed size connection pool.
     #   (set this value to the same as 'maximum-pool-size')
-    minimum-idle: 10
+    minimum-idle: 2
 
     # This setting controls the maximum lifetime of a connection in the pool in milliseconds.
     # - The value should be at least 30 seconds less than any database or infrastructure imposed
     #   connection time limit.
-    maximum-lifetime: 1800000 # 30 minutes
+    maximum-lifetime: 27600000
 
     # This setting controls how frequently the pool will 'ping' a connection in order to prevent it
     # from being timed out by the database or network infrastructure, measured in milliseconds.
     # - The value should be less than maximum-lifetime and greater than 30000 (30 seconds).
     # - Setting the value to zero will disable the keepalive functionality.
-    keepalive-time: 0
+    keepalive-time: 300000
 
     # This setting controls the maximum number of milliseconds that the plugin will wait for a
     # connection from the pool, before timing out.
-    connection-timeout: 5000 # 5 seconds
+    connection-timeout: 30000
 
     # This setting allows you to define extra properties for connections.
     #
