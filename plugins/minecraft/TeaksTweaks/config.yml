@@ -992,8 +992,7 @@ crafting-tweaks:
   # Craftable Saddles
   # Allows you to craft Saddles.
   craftable-saddles:
-    # TODO: disable in .6
-    enabled: true
+    enabled: false
 
   # Craftable Small Dripleaf
   # Allows you to craft Small dripleaves from a large dripleaf.

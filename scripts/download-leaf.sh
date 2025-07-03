@@ -2,7 +2,7 @@
 
 # configuration
 REPO="Winds-Studio/Leaf"
-VERSION="${VERSION:-1.21.5}"
+VERSION="${VERSION:-1.21.7}"
 
 # paths and files
 JAR_DIR="$(dirname "$(cd "$(dirname "$0")" && pwd)")/jar"

@@ -24,8 +24,7 @@ services:
       # disable rcon
       # is this default here?
       ENABLE_RCON: false
-      # TODO: update to .6 as soon as possible
-      MINECRAFT_VERSION: 1.21.5
+      MINECRAFT_VERSION: 1.21.7
       # memory limit
       MEMORY: 512m
     volumes:

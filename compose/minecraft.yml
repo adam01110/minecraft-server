@@ -21,8 +21,7 @@ services:
     environment:
       EULA: true
       GUI: false
-      # TODO: update to .6 as soon as possible
-      VERSION: 1.21.5
+      VERSION: 1.21.7
       # leaf server jar
       TYPE: custom
       CUSTOM_SERVER: /custom/leaf.jar

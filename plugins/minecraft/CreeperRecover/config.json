@@ -6,8 +6,8 @@
     "ignoreUpdates": true
   },
   "recover": {
-    "recoverSpeed": 1,
-    "recoverDelay": 50,
+    "recoverSpeed": 10,
+    "recoverDelay": 100,
     "blockRecoverSound": "BLOCK.ROOTED_DIRT.PLACE",
     "blockBlacklist": []
   },

@@ -4,7 +4,7 @@
 
 ## <img src="assets/icons/info.svg" width="16" height="16" alt="clipboard"> Server Information
 
-- **Version:** 1.21.5 (will update to .7 as soon as possible)
+- **Version:** 1.21.7 (supports 1.21.5 and up)
 - **Platforms:** Java Edition & Bedrock Edition
 - **Discord:** [Join our community](https://discord.gg/zV7FcdJRgj)
 
@@ -73,6 +73,7 @@
 | **PacketEvents**   | Library for Minecraft packet manipulation.                     | [GitHub](https://github.com/retrooper/packetevents)  |
 | **SignedVelocity** | Cancel or modify messages from Velocity without problems.      | [GitHub](https://github.com/4drian3d/SignedVelocity) |
 | **ViaVersion**     | Allow newer clients to connect to older servers.               | [Website](https://viaversion.com/)                   |
+| **ViaBackwards**   | Allow older clients to connect to newer servers.               | [Website](https://viaversion.com/)                   |
 | **Geysermc**       | A bridge/proxy allowing bedrock to connect to java.            | [Website](https://geysermc.org/)                     |
 | **Floodgate**      | Hybrid mode plugin to allow for connections geyser.            | [Website](https://geysermc.org/)                     |
 | **CMIV**           | Velocity network plugin for cmi.                               | [Website](https://www.zrips.net/cmiv/)               |
