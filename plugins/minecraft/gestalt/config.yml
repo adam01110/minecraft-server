@@ -1,2 +1,0 @@
-# The auto-updater automatically deletes the library and redownloads it whenever the server restarts
-autoUpdate: false

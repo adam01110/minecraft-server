@@ -36,7 +36,7 @@ max-connection-distance: 64
 shop-limit-per-player: 128
 stockpile-limit-per-shop: 8
 
-earnings-pile-limit-per-player: 8
+earnings-pile-limit-per-player: 128
 shop-limit-per-earnings-pile: 1
 
 # Whether to allow pistons to move shop blocks.

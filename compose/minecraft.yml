@@ -18,6 +18,7 @@ services:
       - cmi-database-password
       - luckperms-database-password
       - coreprotect-database-password
+      - veinminer-database-password
     environment:
       EULA: true
       GUI: false
@@ -56,6 +57,7 @@ services:
       CFG_CMI_DATABASE_PASSWORD_FILE: /run/secrets/cmi-database-password
       CFG_LUCKPERMS_DATABASE_PASSWORD_FILE: /run/secrets/luckperms-database-password
       CFG_COREPROTECT_DATABASE_PASSWORD_FILE: /run/secrets/coreprotect-database-password
+      CFG_VEINMINER_DATABASE_PASSWORD_FILE: /run/secrets/veinminer-database-password
     env_file:
       # velocity forwarding secret
       - ../secrets/forwarding-secret.env
@@ -118,3 +120,5 @@ secrets:
     file: ../secrets/luckperms-database-password.txt
   coreprotect-database-password:
     file: ../secrets/coreprotect-database-password.txt
+  veinminer-database-password:
+    file: ../secrets/veinminer-database-password.txt

@@ -6,15 +6,15 @@
     "ignoreUpdates": true
   },
   "recover": {
-    "recoverSpeed": 10,
-    "recoverDelay": 100,
+    "recoverSpeed": 100,
+    "recoverDelay": 800,
     "blockRecoverSound": "BLOCK.ROOTED_DIRT.PLACE",
     "blockBlacklist": []
   },
   "target": [
     {
       "type": "WORLD",
-      "ignore": true,
+      "ignore": false,
       "whitelist": ["world", "world_nether", "world_the_end"],
       "blacklist": []
     },

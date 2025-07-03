@@ -1,6 +1,6 @@
 Afk:
   # Enable or disable auto afk system entirely
-  Enabled: false
+  Enabled: true
   # When enabled shows title message informing that player is in afk mode
   TitleMessage: true
   # When enabled shows random subtitle message

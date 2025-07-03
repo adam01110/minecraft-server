@@ -359,11 +359,11 @@ misc:
     join:
       enabled: true
       # Join message of player
-      message: default
+      message: "&8[&a+&8] &f%player_displayname% &7left the game"
     quit:
       enabled: true
       # Quit message of player
-      message: default
+      message: " &8[&c-&8] &f%player_displayname% &7joined the game"
   cache:
     # Cache the player profile result on they first join.
     # It's useful if Mojang's verification server is down.
