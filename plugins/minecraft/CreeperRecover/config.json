@@ -20,7 +20,7 @@
     },
     {
       "type": "ENTITY",
-      "ignore": true,
+      "ignore": false,
       "entityTypes": ["CREEPER"]
     },
     {
