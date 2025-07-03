@@ -35,7 +35,7 @@ attach-database:
   docker exec -it mariadb /usr/bin/mariadb -u root -p
 attach-minecraft:
   docker compose -f ./compose/minecraft.yml attach minecraft
-attach-velocity:
+attach-proxy:
   docker compose -f ./compose/proxy.yml attach velocity
 
 # setup

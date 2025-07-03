@@ -20,9 +20,13 @@
 /dev/datapacks/*
 
 # dont put world files in repo
-*/worlds/world/*
-*/worlds/nether/*
-*/worlds/end/*
+/worlds/world/*
+/worlds/nether/*
+/worlds/end/*
+# and the dev world files
+/dev/worlds/world/*
+/dev/worlds/nether/*
+/dev/worlds/end/*
 
 # dont put secrets in repo
 # these are for the minecraft container
