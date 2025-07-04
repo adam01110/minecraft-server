@@ -79,6 +79,10 @@
 | **Luckperms**      | Allows server admins to control what features players can use. | [website](https://luckperms.net/)                    |
 | **MiniMOTD**       | Basic server list MOTD plugin.                                 | [GitHub](https://github.com/jpenilla/MiniMOTD)       |
 
+### Geyser extensions
+
+|**Boar Anticheat**|Proof of concept prediction anticheat for Geyser.|[Github](https://github.com/oryxel1/Boar)|
+
 ## <img src="assets/icons/rocket.svg" width="16" height="16" alt="rocket"> Development Setup
 
 ### Required Tools
