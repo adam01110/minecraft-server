@@ -359,11 +359,11 @@ misc:
     join:
       enabled: true
       # Join message of player
-      message: "<gray>[<green>+</green>]</gray> <white>%player_displayname%</white> <dark_gray>joined the game</dark_gray>"
+      message: "<gray>[<green>+</green>]</gray> %cmi_user_rank_displayname% <dark_gray>joined the game</dark_gray>"
     quit:
       enabled: true
       # Quit message of player
-      message: " <gray>[<red>-</red>]</gray> <white>%player_displayname%</white> <dark_gray>left the game</dark_gray>"
+      message: " <gray>[<red>-</red>]</gray> %cmi_user_rank_displayname% <dark_gray>left the game</dark_gray>"
   cache:
     # Cache the player profile result on they first join.
     # It's useful if Mojang's verification server is down.
