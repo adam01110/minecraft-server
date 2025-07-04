@@ -63,7 +63,7 @@
 # Server protection
 
 - **Logging**: All server interactions are logged using coreprotect, allowing for rollbacks to revert changes made by bad actors.
-- **Anticheat**: Vulcan anticheat for java player ~~& boar anticheat for bedrock players.~~
+- **Anticheat**: Vulcan anticheat for java player & boar anticheat for bedrock players.
 - **Antixray**: The server uses papermc's built in anti xray to prevent players from xraying.
 - **Redstone**: There is a redstone limiter however is has very high limits so unless you have a big cube of pistons and observers it should not affect you.
 - **Secure seed**: the servers seed can't be cracked so that you actually have to find things in the world.
