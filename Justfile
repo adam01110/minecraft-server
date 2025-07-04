@@ -50,3 +50,7 @@ setup:
 # update
 update:
   scripts/download-leaf.sh
+  docker compose -f ./compose/broadcaster.yml pull
+  docker compose -f ./compose/database.yml pull
+  docker compose -f ./compose/minecraft.yml pull
+  docker compose -f ./compose/proxy.yml pull
