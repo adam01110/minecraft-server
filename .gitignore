@@ -74,4 +74,4 @@
 !/dev/datapacks/bukkit
 
 # keep vulcan config
-/plugins/minecraft/Vulcan/config.yml
+!/plugins/minecraft/Vulcan/config.yml

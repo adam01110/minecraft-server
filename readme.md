@@ -29,7 +29,6 @@
 | Plugin                 | Description                                                               | Links                                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Spark**              | Performance profiler and monitoring.                                      | [Website](https://spark.lucko.me/)                                                                          |
-| **OkTreasures**        | Alternative buried treasure search.                                       | [Hangar](https://hangar.papermc.io/Kyle/OkTreasures)                                                        |
 | **Otherside**          | Plugin to fix portal-based farms.                                         | [Hangar](https://hangar.papermc.io/Kyle/Otherside)                                                          |
 | **PacketEvents**       | Library for Minecraft packet manipulation.                                | [GitHub](https://github.com/retrooper/packetevents)                                                         |
 | **SignedVelocity**     | Cancel or modify messages from Velocity without problems.                 | [GitHub](https://github.com/4drian3d/SignedVelocity)                                                        |
