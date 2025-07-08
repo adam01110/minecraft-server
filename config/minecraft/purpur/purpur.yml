@@ -209,7 +209,7 @@ world-settings:
         allow-effects-with-tinted-glass: false
       bed:
         explode: true
-        explode-on-villager-sleep: true
+        explode-on-villager-sleep: false
         explosion-power: 5.0
         explosion-fire: true
         explosion-effect: BLOCK
